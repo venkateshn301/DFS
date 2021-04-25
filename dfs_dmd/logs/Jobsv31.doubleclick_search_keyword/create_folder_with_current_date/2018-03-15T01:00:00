@@ -1,0 +1,38 @@
+[2018-03-16 06:00:37,941] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-16 06:00:38,705] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword create_folder_with_current_date 2018-03-15T01:00:00 --job_id 3797 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-03-16 06:00:39,542] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:39,542] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-03-16 06:00:39,763] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:39,763] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-03-16 06:00:39,819] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:39,818] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-03-16 06:00:40,321] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:40,320] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-16 06:00:41,217] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,216] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.create_folder_with_current_date 2018-03-15 01:00:00 [queued]>
+[2018-03-16 06:00:41,222] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,222] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.create_folder_with_current_date 2018-03-15 01:00:00 [queued]>
+[2018-03-16 06:00:41,222] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,222] {models.py:1318} INFO - 
+[2018-03-16 06:00:41,222] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-16 06:00:41,222] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-03-16 06:00:41,222] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-16 06:00:41,222] {base_task_runner.py:95} INFO - Subtask: 
+[2018-03-16 06:00:41,241] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,240] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-03-15 01:00:00
+[2018-03-16 06:00:41,291] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,290] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-03-16 06:00:41,291] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-03-16 06:00:41,292] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,292] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpGdhCw6//tmp/airflowtmpGdhCw6/create_folder_with_current_date6duYPB
+[2018-03-16 06:00:41,292] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,292] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/create_folder_with_current_date.sh doubleclick_search 20180315
+[2018-03-16 06:00:41,296] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,295] {bash_operator.py:90} INFO - Output:
+[2018-03-16 06:00:41,298] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,298] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-03-16 06:00:41,302] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,302] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-03-16 06:00:41,492] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,491] {bash_operator.py:94} INFO - Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1052-aws x86_64)
+[2018-03-16 06:00:41,492] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,491] {bash_operator.py:94} INFO - 
+[2018-03-16 06:00:41,492] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,491] {bash_operator.py:94} INFO - * Documentation:  https://help.ubuntu.com
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,491] {bash_operator.py:94} INFO - * Management:     https://landscape.canonical.com
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - * Support:        https://ubuntu.com/advantage
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - 
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - Get cloud support with Ubuntu Advantage Cloud Guest:
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - http://www.ubuntu.com/business/services/cloud
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - 
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - 83 packages can be updated.
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - 2 updates are security updates.
+[2018-03-16 06:00:41,493] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - 
+[2018-03-16 06:00:41,494] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,492] {bash_operator.py:94} INFO - 
+[2018-03-16 06:00:41,496] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,496] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-03-16 06:00:41,496] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,496] {bash_operator.py:94} INFO - /home/ubuntu/csv_files/doubleclick_search/20180315
+[2018-03-16 06:00:41,499] {base_task_runner.py:95} INFO - Subtask: [2018-03-16 06:00:41,497] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-03-16 06:00:43,704] {jobs.py:2083} INFO - Task exited with return code 0

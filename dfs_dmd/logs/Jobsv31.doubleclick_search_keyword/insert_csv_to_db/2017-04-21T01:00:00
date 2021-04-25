@@ -1,0 +1,42 @@
+[2018-02-07 10:16:51,712] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-02-07 10:16:52,037] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword insert_csv_to_db 2017-04-21T01:00:00 --job_id 363 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-02-07 10:16:52,255] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,255] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-02-07 10:16:52,337] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,336] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-02-07 10:16:52,359] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,359] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-02-07 10:16:52,502] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,502] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-02-07 10:16:52,813] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,812] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.insert_csv_to_db 2017-04-21 01:00:00 [queued]>
+[2018-02-07 10:16:52,829] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,829] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.insert_csv_to_db 2017-04-21 01:00:00 [queued]>
+[2018-02-07 10:16:52,830] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,830] {models.py:1318} INFO - 
+[2018-02-07 10:16:52,830] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-02-07 10:16:52,830] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-02-07 10:16:52,830] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-02-07 10:16:52,830] {base_task_runner.py:95} INFO - Subtask: 
+[2018-02-07 10:16:52,839] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,838] {models.py:1342} INFO - Executing <Task(BashOperator): insert_csv_to_db> on 2017-04-21 01:00:00
+[2018-02-07 10:16:52,883] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,882] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-02-07 10:16:52,883] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-02-07 10:16:52,884] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,884] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmprQR01b//tmp/airflowtmprQR01b/insert_csv_to_dbH4G9LH
+[2018-02-07 10:16:52,884] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,884] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/insert_csv_to_db.sh test_doubleclick_search_keyword /home/ubuntu/csv_files/doubleclick_search/  20170421  /doubleclick_search_keyword .csv ","
+[2018-02-07 10:16:52,887] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,887] {bash_operator.py:90} INFO - Output:
+[2018-02-07 10:16:52,889] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,889] {bash_operator.py:94} INFO - test_doubleclick_search_keyword /home/ubuntu/csv_files/doubleclick_search/20170421/doubleclick_search_keyword20170421.csv
+[2018-02-07 10:16:52,893] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:52,893] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-02-07 10:16:53,090] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,090] {bash_operator.py:94} INFO - Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1041-aws x86_64)
+[2018-02-07 10:16:53,090] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,090] {bash_operator.py:94} INFO - 
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,090] {bash_operator.py:94} INFO - * Documentation:  https://help.ubuntu.com
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,090] {bash_operator.py:94} INFO - * Management:     https://landscape.canonical.com
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,090] {bash_operator.py:94} INFO - * Support:        https://ubuntu.com/advantage
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,090] {bash_operator.py:94} INFO - 
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - Get cloud support with Ubuntu Advantage Cloud Guest:
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - http://www.ubuntu.com/business/services/cloud
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - 
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - 71 packages can be updated.
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - 0 updates are security updates.
+[2018-02-07 10:16:53,091] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - 
+[2018-02-07 10:16:53,092] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - 
+[2018-02-07 10:16:53,092] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,091] {bash_operator.py:94} INFO - *** System restart required ***
+[2018-02-07 10:16:53,093] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,093] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-02-07 10:16:53,093] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,093] {bash_operator.py:94} INFO - test_doubleclick_search_keyword /home/ubuntu/csv_files/doubleclick_search/20170421/doubleclick_search_keyword20170421.csv ,
+[2018-02-07 10:16:53,094] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,094] {bash_operator.py:94} INFO - ========executing this insert_csv_db===============
+[2018-02-07 10:16:53,165] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,165] {bash_operator.py:94} INFO - COPY  dmd_staging.test_doubleclick_search_keyword FROM STDIN CSV HEADER DELIMITER ','
+[2018-02-07 10:16:53,168] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,167] {bash_operator.py:94} INFO - COPY 23
+[2018-02-07 10:16:53,171] {base_task_runner.py:95} INFO - Subtask: [2018-02-07 10:16:53,169] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-02-07 10:16:57,046] {jobs.py:2083} INFO - Task exited with return code 0

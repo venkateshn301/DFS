@@ -1,0 +1,26 @@
+[2018-04-05 06:00:37,723] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-04-05 06:00:38,701] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword create_folder_with_current_date 2018-04-04T01:00:00 --job_id 5205 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-04-05 06:00:39,480] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:39,479] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-04-05 06:00:39,833] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:39,833] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-04-05 06:00:39,915] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:39,914] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-04-05 06:00:40,308] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:40,308] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-04-05 06:00:41,170] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,169] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.create_folder_with_current_date 2018-04-04 01:00:00 [queued]>
+[2018-04-05 06:00:41,183] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,182] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.create_folder_with_current_date 2018-04-04 01:00:00 [queued]>
+[2018-04-05 06:00:41,183] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,182] {models.py:1318} INFO - 
+[2018-04-05 06:00:41,183] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-04-05 06:00:41,183] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-04-05 06:00:41,183] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-04-05 06:00:41,183] {base_task_runner.py:95} INFO - Subtask: 
+[2018-04-05 06:00:41,239] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,239] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-04-04 01:00:00
+[2018-04-05 06:00:41,368] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,368] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-04-05 06:00:41,368] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-04-05 06:00:41,369] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,369] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpkuKbwe//tmp/airflowtmpkuKbwe/create_folder_with_current_datebFTK8p
+[2018-04-05 06:00:41,369] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,369] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/create_folder_with_current_date.sh doubleclick_search 20180404
+[2018-04-05 06:00:41,375] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,374] {bash_operator.py:90} INFO - Output:
+[2018-04-05 06:00:41,378] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,378] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-04-05 06:00:41,391] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,391] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-04-05 06:00:41,666] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,666] {bash_operator.py:94} INFO - 
+[2018-04-05 06:00:41,678] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,678] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-04-05 06:00:41,678] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,678] {bash_operator.py:94} INFO - /home/ubuntu/csv_files/doubleclick_search/20180404
+[2018-04-05 06:00:41,686] {base_task_runner.py:95} INFO - Subtask: [2018-04-05 06:00:41,685] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-04-05 06:00:43,703] {jobs.py:2083} INFO - Task exited with return code 0

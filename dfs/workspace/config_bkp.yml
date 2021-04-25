@@ -1,0 +1,219 @@
+#parameter dictionary
+#location of bashscript path
+
+email:
+     from_email: monitoring@beyondanalysis.net
+     from_email_pass: Laga9682
+     to_email: therath@mitrai.com, nwijayagunawardhane@mitrai.com, scooray@mitrai.com, aulpathakumbura@mitrai.com
+     smtp_host: smtp-mail.outlook.com
+     smtp_port: 587
+
+bash_path:
+          test_folder: /home/test/airflow/dags/ba_aws_dags/test.sh
+          create_folder_with_current_date_location: /home/ubuntu/workspace/airflow/bash/create_folder_with_current_date.sh
+          fetch_data_from_api_location: /home/ubuntu/workspace/airflow/bash/fetch_data.sh
+          cleanse_table_location: /home/ubuntu/workspace/airflow/bash/clense_table.sh
+          insert_csv_to_db_location: /home/ubuntu/workspace/airflow/bash/insert_csv_to_db.sh
+          insert_multiple_csv_to_db_location: /home/ubuntu/workspace/airflow/bash/insert_multiple_csvs_to_db.sh
+          insert_csv_to_s3_location: /home/ubuntu/workspace/airflow/bash/insert_csv_to_s3.sh
+          manipulate_csv_location: /home/ubuntu/workspace/airflow/bash/manipulate_csv.sh
+          load_to_dwh_location: /home/ubuntu/workspace/airflow/bash/load_to_dwh.sh
+          load_to_integration_location: /home/ubuntu/workspace/airflow/bash/load_to_integration.sh
+          delete_csv_from_local_location: /home/ubuntu/workspace/airflow/bash/delete_csv_from_local.sh
+
+parameters:
+           brightedge_keyword_rank_data_paras:
+            folder_api_provider: brightedge
+            sql_script: brightedge_keyword_rank_initial.sql
+            api_provider: --api-provider=brightedge
+            data_set: --dataset=keyword_rank_data
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/brightedge/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: brightedge_keyword_rank
+            csv_file: /home/ubuntu/csv_files/brightedge/
+            csv_file_locationv2: /brightedge_keyword_rank_data_
+            csv_file_locationv3: .csv
+            interval: 0 1 * * 6
+
+#           criteo_campaigns_paras:
+#            folder_api_provider: criteo
+#            sql_script: criteo_campaigns_initial.sql
+#            api_provider: --api-provider=criteo
+#            data_set:  --dataset=campaigns
+#            csv_file_location: --csvfile=/home/ubuntu/csv_files/criteo/
+#            start_date:  --start-date=
+#            end_date:  --end-date=
+#            table_name: criteo_campaigns
+#            csv_file: /home/ubuntu/csv_files/criteo/
+#            csv_file_locationv2: /criteo_campaigns_
+#            csv_file_locationv3: .csv
+#            csv_filev2: /criteo_campaigns_
+#            csv_filev3: .csv
+
+#           criteo_budget_paras:
+#            folder_api_provider: criteo
+#            sql_script: criteo_budget_initial.sql
+#            api_provider: --api-provider=criteo
+#            data_set:  --dataset=budget
+#            csv_file_location: --csvfile=/home/ubuntu/csv_files/criteo/
+#            start_date:  --start-date=
+#            end_date:  --end-date=
+#            table_name: criteo_budget
+#            csv_file: /home/ubuntu/csv_files/criteo/
+#            csv_file_locationv2: /criteo_budget_
+#            csv_file_locationv3: .csv
+#            csv_filev2: /criteo_budget_
+#            csv_filev3: .csv
+
+#           brightedge_keywordgroup_revenue_paras:
+#            folder_api_provider: brightedge
+#            sql_script: brightedge_keywordgroup_revenue_initial.sql
+#            api_provider: --api-provider=brightedge
+#            data_set: --dataset=keywordgroup_revenue
+#            csv_file_location: --csvfile=/home/ubuntu/csv_files/brightedge/
+#            start_date: --start-date=
+#            end_date: --end-date=
+#            table_name: brightedge_keywordgroup_revenue
+#            csv_file: /home/ubuntu/csv_files/brightedge/
+#            csv_file_locationv2: /brightedge_keywordgroup_revenue_
+#            csv_file_locationv3: .csv
+#            csv_filev2: /brightedge_keywordgroup_revenue_
+#            csv_filev3: .csv
+
+           brightedge_share_of_voice_paras:
+            folder_api_provider: brightedge
+            sql_script: brightedge_share_of_voice_initial.sql
+            api_provider: --api-provider=brightedge
+            data_set: --dataset=share_of_voice
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/brightedge/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: brightedge_share_of_voice
+            csv_file: /home/ubuntu/csv_files/brightedge/
+            csv_file_locationv2: /brightedge_share_of_voice_
+            csv_file_locationv3: .csv
+            interval: 0 1 * * 6
+
+           doubleclick_search_campaign_paras:
+            folder_api_provider: doubleclick_search
+            sql_script: tst_doubleclick_campaign.sql
+            api_provider: --api-provider=doubleclick_search
+            data_set: --dataset=campaign
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/doubleclick_search/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: doubleclick_search_campaign
+            csv_file: /home/ubuntu/csv_files/doubleclick_search/
+            csv_file_locationv2: /doubleclick_search_campaign
+            csv_file_locationv3: .csv
+            interval: 0 1 * * *
+
+           doubleclick_search_productadvertised_paras:
+            folder_api_provider: doubleclick_search
+            sql_script: tst_doubleclick_productadvertised.sql
+            api_provider: --api-provider=doubleclick_search
+            data_set: --dataset=productAdvertised
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/doubleclick_search/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: doubleclick_search_products
+            csv_file: /home/ubuntu/csv_files/doubleclick_search/
+            csv_file_locationv2: /doubleclick_search_productadvertised_
+            csv_file_locationv3: .csv
+            interval: 0 1 * * *
+
+           doubleclick_dcm_standard_display_uk_paras:
+            folder_api_provider: doubleclick_dcm
+            sql_script: tst_doubleclick_dcm_standard_display_uk.sql
+            api_provider: --api-provider=doubleclick_dcm
+            data_set: --dataset=standard_display_uk
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/doubleclick_dcm/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: doubleclick_display_uk
+            csv_file: /home/ubuntu/csv_files/doubleclick_dcm/
+            csv_file_locationv2: /doubleclick_dcm_standard_display_uk_
+            csv_file_locationv3: .csv
+            interval: 0 1 * * *
+
+           gapremiuim_dailyaggregatesfull_paras:
+            folder_api_provider: gapremium
+            sql_script: tst_gapremium_daily_aggregates_full.sql
+            api_provider: --api-provider=gapremium
+            data_set: --dataset=daily_aggregates_full
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/gapremium/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: gapremium_daily_visits
+            csv_file: /home/ubuntu/csv_files/gapremium/
+            csv_file_locationv2: /gapremium_daily_aggregates_full_
+            csv_file_locationv3: .csv
+            interval: 0 1 * * *
+
+           responsetap_full_call_records_paras:
+            folder_api_provider: responsetap
+            sql_script: tst_responsetap_full_call_records.sql
+            api_provider: --api-provider=responsetap
+            data_set: --dataset=full_call_records
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/responsetap/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: responsetap_full_call_records
+            csv_file: /home/ubuntu/csv_files/responsetap/
+            csv_file_locationv2: /responsetap_fill_call_records_
+            csv_file_locationv3: .csv
+            interval: 0 1 * * *
+
+           doubleclick_search_keyword_paras:
+            folder_api_provider: doubleclick_search
+            sql_script: tst_doubleclick_keyword.sql
+            api_provider: --api-provider=doubleclick_search
+            data_set: --dataset=keyword
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/doubleclick_search/
+            start_date: --start-date=
+            end_date: --end-date=
+            table_name: doubleclick_search_keyword
+            csv_file: /home/ubuntu/csv_files/doubleclick_search/
+            csv_file_locationv2: /doubleclick_search_keyword
+            csv_file_locationv3: .csv
+            interval: 0 1 * * *
+
+           criteo_campaigns_paras:
+            folder_api_provider: criteo
+            sql_script: criteo_campaign_report.sql
+            api_provider: --api-provider=criteo
+            data_set:  --dataset=campaign_report
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/criteo/
+            start_date:  --start-date=
+            end_date:  --end-date=
+            table_name: criteo_campaign_report
+            csv_file: /home/ubuntu/csv_files/criteo/
+            csv_file_locationv2: /criteo_campaigns_
+            csv_file_locationv3: .csv
+            csv_filev2: /criteo_campaigns_
+            csv_filev3: .csv
+            reorder_csv_file_location: --file-path=/home/ubuntu/csv_files/criteo/
+            reorder_csv_file: /reorder_criteo_campaigns_
+
+           hitwise_data_paras:
+            folder_api_provider: hitwise
+            sql_script: /home/ubuntu/dfs_dmd_etl/sqlscripts/tablescripts/hitwise_all.sql
+            api_provider: --api-provider=hitwise
+            data_set:  --dataset=extract_hitwise_data
+            csv_file_location: --csv-file=/home/ubuntu/csv_files/hitwise/
+            start_date:  --start-date=
+            end_date:  --end-date=
+            table_list: '"hitwise_dfs_competitors hitwise_dfs_competitors_sections hitwise_paid_rate_daily_comp_set hitwise_paid_rate_daily_specialist hitwise_specialist"'
+            csv_list: '"hitwise_dfs_competitors.csv hitwise_dfs_competitors_sections.csv hitwise_paid_rate_daily_comp_set.csv hitwise_paid_rate_daily_specialist.csv hitwise_specialist.csv"'
+            csv_file: /home/ubuntu/csv_files/hitwise/
+            csv_file_locationv2: /competitor_daily_data_
+            csv_file_locationv3: .xlsx
+            csv_filev2: /criteo_campaigns_
+            csv_filev3: .csv
+            csv_file_location_2: --file-path=/home/ubuntu/csv_files/hitwise/
+
+
+
+
+

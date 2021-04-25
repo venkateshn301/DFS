@@ -1,0 +1,264 @@
+[2018-08-29 07:57:13,650] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 07:57:14,040] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 48 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 07:57:14,344] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,344] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 07:57:14,608] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,608] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 07:57:14,971] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,971] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 07:57:14,973] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,973] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 07:57:14,973] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,973] {models.py:1318} INFO - 
+[2018-08-29 07:57:14,973] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 07:57:14,973] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 07:57:14,973] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 07:57:14,973] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 07:57:14,988] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,988] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 07:57:14,998] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,998] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 07:57:14,998] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 07:57:14,999] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,999] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpdswg___0//tmp/airflowtmpdswg___0/create_folder_with_current_date7l8_o46u
+[2018-08-29 07:57:14,999] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:14,999] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 07:57:15,002] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:15,002] {bash_operator.py:90} INFO - Output:
+[2018-08-29 07:57:15,004] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:15,004] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 07:57:15,004] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:15,004] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 07:57:15,004] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:15,004] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 07:57:15,005] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:57:15,005] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 07:57:15,030] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 07:57:15,030] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 07:57:19,042] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 10:38:45,188] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 10:38:45,549] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 51 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 10:38:45,831] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:45,831] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 10:38:46,142] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,141] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 10:38:46,515] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,515] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 10:38:46,517] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,517] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 10:38:46,517] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,517] {models.py:1318} INFO - 
+[2018-08-29 10:38:46,517] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 10:38:46,517] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 10:38:46,517] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 10:38:46,517] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 10:38:46,535] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,535] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 10:38:46,544] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,544] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 10:38:46,544] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 10:38:46,545] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,545] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpniytcc0q//tmp/airflowtmpniytcc0q/create_folder_with_current_datepxcl0d5l
+[2018-08-29 10:38:46,545] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,545] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 10:38:46,557] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,556] {bash_operator.py:90} INFO - Output:
+[2018-08-29 10:38:46,558] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,558] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 10:38:46,558] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,558] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 10:38:46,558] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,558] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 10:38:46,559] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:38:46,559] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 10:38:46,579] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 10:38:46,579] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 10:38:50,596] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 10:47:42,220] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 10:47:42,588] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 56 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 10:47:42,893] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:42,893] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 10:47:43,160] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,160] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 10:47:43,525] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,525] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 10:47:43,527] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,527] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 10:47:43,527] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,527] {models.py:1318} INFO - 
+[2018-08-29 10:47:43,527] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 10:47:43,527] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 10:47:43,528] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 10:47:43,528] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 10:47:43,544] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,544] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 10:47:43,554] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,554] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 10:47:43,554] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 10:47:43,555] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,555] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpyi_thmz4//tmp/airflowtmpyi_thmz4/create_folder_with_current_datehlfnj85r
+[2018-08-29 10:47:43,555] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,555] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 10:47:43,558] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,558] {bash_operator.py:90} INFO - Output:
+[2018-08-29 10:47:43,560] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,559] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 10:47:43,560] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,559] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 10:47:43,560] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,560] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 10:47:43,561] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:47:43,561] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 10:47:43,585] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 10:47:43,585] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 10:47:47,604] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 10:54:27,626] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 10:54:28,010] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 61 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 10:54:28,331] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,331] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 10:54:28,597] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,597] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 10:54:28,965] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,964] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 10:54:28,966] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,966] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 10:54:28,966] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,966] {models.py:1318} INFO - 
+[2018-08-29 10:54:28,966] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 10:54:28,966] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 10:54:28,966] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 10:54:28,967] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 10:54:28,980] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,980] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 10:54:28,990] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,990] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 10:54:28,990] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 10:54:28,991] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,991] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp8le6cd4o//tmp/airflowtmp8le6cd4o/create_folder_with_current_datec3fydvim
+[2018-08-29 10:54:28,991] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,991] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 10:54:28,994] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,994] {bash_operator.py:90} INFO - Output:
+[2018-08-29 10:54:28,996] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,995] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 10:54:28,996] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,995] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 10:54:28,996] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,996] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 10:54:28,997] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 10:54:28,997] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 10:54:29,014] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 10:54:29,014] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 10:54:33,038] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:08:55,575] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:08:56,182] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 66 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:08:56,588] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:56,588] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:08:56,955] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:56,955] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:08:57,327] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,327] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:08:57,329] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,329] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:08:57,329] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,329] {models.py:1318} INFO - 
+[2018-08-29 11:08:57,329] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:08:57,329] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 11:08:57,329] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:08:57,330] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:08:57,353] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,352] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 11:08:57,362] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,362] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:08:57,363] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:08:57,363] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,363] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpel85zu76//tmp/airflowtmpel85zu76/create_folder_with_current_date40yfolqn
+[2018-08-29 11:08:57,363] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,363] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 11:08:57,366] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,366] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:08:57,369] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,369] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 11:08:57,369] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,369] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:08:57,369] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,369] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 11:08:57,370] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:08:57,370] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:08:57,384] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:08:57,384] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:09:01,212] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:17:50,961] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:17:51,351] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 71 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:17:51,640] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:51,640] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:17:51,908] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:51,907] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:17:52,279] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,279] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:17:52,281] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,281] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:17:52,281] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,281] {models.py:1318} INFO - 
+[2018-08-29 11:17:52,282] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:17:52,282] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 11:17:52,282] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:17:52,282] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:17:52,334] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,333] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 11:17:52,364] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,363] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:17:52,364] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:17:52,366] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,365] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp1z_jan7q//tmp/airflowtmp1z_jan7q/create_folder_with_current_datel_1flnfu
+[2018-08-29 11:17:52,366] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,365] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 11:17:52,370] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,370] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:17:52,373] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,372] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 11:17:52,373] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,373] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:17:52,373] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,373] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 11:17:52,376] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:17:52,376] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:17:52,408] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:17:52,408] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:17:56,349] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:24:13,066] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:24:13,490] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 76 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:24:13,796] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:13,795] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:24:14,082] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,082] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:24:14,476] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,476] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:24:14,478] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,478] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:24:14,478] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,478] {models.py:1318} INFO - 
+[2018-08-29 11:24:14,478] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:24:14,478] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 11:24:14,479] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:24:14,479] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:24:14,494] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,494] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 11:24:14,504] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,504] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:24:14,504] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:24:14,505] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,504] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp3h7auyr3//tmp/airflowtmp3h7auyr3/create_folder_with_current_dateq2y3gu_p
+[2018-08-29 11:24:14,505] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,504] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 11:24:14,508] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,508] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:24:14,510] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,509] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 11:24:14,510] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,510] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:24:14,510] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,510] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 11:24:14,511] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:14,511] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:24:14,523] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:24:14,523] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:24:18,501] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:36:52,437] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:36:52,856] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 81 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:36:53,159] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,159] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:36:53,440] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,439] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:36:53,825] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,825] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:36:53,826] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,826] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:36:53,827] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,827] {models.py:1318} INFO - 
+[2018-08-29 11:36:53,827] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:36:53,827] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 11:36:53,827] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:36:53,827] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:36:53,850] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,850] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 11:36:53,866] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,866] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:36:53,866] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:36:53,867] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,866] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp68lq6c5s//tmp/airflowtmp68lq6c5s/create_folder_with_current_date6vxtk4vy
+[2018-08-29 11:36:53,867] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,867] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 11:36:53,870] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,870] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:36:53,871] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,871] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 11:36:53,871] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,871] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:36:53,872] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,872] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 11:36:53,872] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:36:53,872] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:36:53,886] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:36:53,886] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:36:57,881] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:39:52,248] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:39:52,663] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 86 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:39:52,947] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:52,947] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:39:53,218] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,218] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:39:53,601] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,601] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:39:53,603] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,603] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:39:53,603] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,603] {models.py:1318} INFO - 
+[2018-08-29 11:39:53,603] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:39:53,603] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 11:39:53,603] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:39:53,603] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:39:53,621] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,621] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 11:39:53,631] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,631] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:39:53,631] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:39:53,632] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,632] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpdxa33m2h//tmp/airflowtmpdxa33m2h/create_folder_with_current_dateb69_xiju
+[2018-08-29 11:39:53,632] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,632] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 11:39:53,636] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,636] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:39:53,637] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,637] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 11:39:53,637] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,637] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:39:53,637] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,637] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 11:39:53,638] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:39:53,638] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:39:53,662] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:39:53,662] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:39:57,689] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:43:14,022] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:43:14,418] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 91 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:43:14,724] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:14,724] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:43:15,020] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,020] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:43:15,393] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,393] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:43:15,395] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,394] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:43:15,395] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,394] {models.py:1318} INFO - 
+[2018-08-29 11:43:15,395] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:43:15,395] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 11:43:15,395] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:43:15,395] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:43:15,411] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,411] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 11:43:15,421] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,421] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:43:15,421] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:43:15,422] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,422] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpq4w2nc9s//tmp/airflowtmpq4w2nc9s/create_folder_with_current_datew8mm44wc
+[2018-08-29 11:43:15,422] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,422] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 11:43:15,425] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,425] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:43:15,427] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,427] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 11:43:15,427] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,427] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:43:15,427] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,427] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 11:43:15,429] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:15,428] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:43:15,474] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:43:15,474] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:43:19,433] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 22:28:54,248] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:28:54,676] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull create_folder_with_current_date 2018-08-22T00:00:00 --job_id 98 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 22:28:54,939] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:54,938] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 22:28:55,235] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,234] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:28:55,620] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,620] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 22:28:55,622] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,622] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.create_folder_with_current_date 2018-08-22 00:00:00 [queued]>
+[2018-08-29 22:28:55,623] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,623] {models.py:1318} INFO - 
+[2018-08-29 22:28:55,623] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 22:28:55,623] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 22:28:55,623] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 22:28:55,623] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 22:28:55,669] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,669] {models.py:1342} INFO - Executing <Task(BashOperator): create_folder_with_current_date> on 2018-08-22 00:00:00
+[2018-08-29 22:28:55,714] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,713] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 22:28:55,714] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 22:28:55,716] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,716] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpazenv82e//tmp/airflowtmpazenv82e/create_folder_with_current_datedhsvsnjj
+[2018-08-29 22:28:55,716] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,716] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/create_folder_with_current_date.sh gapremium 20180822
+[2018-08-29 22:28:55,726] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,726] {bash_operator.py:90} INFO - Output:
+[2018-08-29 22:28:55,731] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,731] {bash_operator.py:94} INFO - ================test!!!!!!!!==========
+[2018-08-29 22:28:55,731] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,731] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 22:28:55,731] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,731] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822
+[2018-08-29 22:28:55,734] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:28:55,733] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 22:28:55,751] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 22:28:55,751] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 22:28:59,711] {jobs.py:2083} INFO - Task exited with return code 0
