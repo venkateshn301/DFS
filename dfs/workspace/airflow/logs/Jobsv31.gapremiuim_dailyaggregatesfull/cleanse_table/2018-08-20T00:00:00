@@ -1,0 +1,26 @@
+[2018-08-29 00:37:33,489] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:37:33,901] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-20T00:00:00 --job_id 39 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:37:34,202] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,201] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:37:34,504] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,504] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:37:34,941] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,941] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:37:34,946] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,946] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:37:34,947] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,947] {models.py:1318} INFO - 
+[2018-08-29 00:37:34,947] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:37:34,947] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 00:37:34,947] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:37:34,947] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:37:34,964] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,964] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-20 00:00:00
+[2018-08-29 00:37:34,976] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,976] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:37:34,977] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:37:34,977] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,977] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpoyq7hm9f//tmp/airflowtmpoyq7hm9f/cleanse_table5llbzs8q
+[2018-08-29 00:37:34,978] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,977] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium.py
+[2018-08-29 00:37:34,981] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,981] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:37:34,982] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,982] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 00:37:34,982] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,982] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:37:34,982] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,982] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh: line 6: cd: /home/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/: No such file or directory
+[2018-08-29 00:37:34,982] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,982] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh: line 7: ./cleanse_tables.sh: No such file or directory
+[2018-08-29 00:37:34,983] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,983] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 00:37:34,983] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:34,983] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:37:34,996] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:37:34,996] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:37:38,913] {jobs.py:2083} INFO - Task exited with return code 0

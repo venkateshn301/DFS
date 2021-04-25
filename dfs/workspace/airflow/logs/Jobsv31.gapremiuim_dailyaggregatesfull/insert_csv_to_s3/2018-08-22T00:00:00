@@ -1,0 +1,25 @@
+[2018-08-29 22:36:41,219] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:36:41,654] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull insert_csv_to_s3 2018-08-22T00:00:00 --job_id 102 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 22:36:41,914] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:41,914] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 22:36:42,200] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,200] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:36:42,589] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,589] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.insert_csv_to_s3 2018-08-22 00:00:00 [queued]>
+[2018-08-29 22:36:42,595] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,595] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.insert_csv_to_s3 2018-08-22 00:00:00 [queued]>
+[2018-08-29 22:36:42,595] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,595] {models.py:1318} INFO - 
+[2018-08-29 22:36:42,595] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 22:36:42,595] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 22:36:42,595] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 22:36:42,595] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 22:36:42,639] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,639] {models.py:1342} INFO - Executing <Task(BashOperator): insert_csv_to_s3> on 2018-08-22 00:00:00
+[2018-08-29 22:36:42,654] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,653] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 22:36:42,654] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 22:36:42,655] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,655] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpgl8g0uj9//tmp/airflowtmpgl8g0uj9/insert_csv_to_s3jg1wthpk
+[2018-08-29 22:36:42,655] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,655] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/insert_csv_to_s3.sh /home/baadmin/Documents/dfs/csv_files/gapremium/  20180822  /gapremium_daily_aggregates_full_ .csv gapremium
+[2018-08-29 22:36:42,658] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,658] {bash_operator.py:90} INFO - Output:
+[2018-08-29 22:36:42,661] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,661] {bash_operator.py:94} INFO - /home/baadmin/Documents/dfs/csv_files/gapremium/20180822/gapremium_daily_aggregates_full_20180822.csv
+[2018-08-29 22:36:42,661] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,661] {bash_operator.py:94} INFO - gapremium/20180822
+[2018-08-29 22:36:42,661] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:36:42,661] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 22:37:13,127] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:37:13,127] {bash_operator.py:94} INFO - Completed 97.2 KiB/97.2 KiB with 1 file(s) remainingupload: ../../home/baadmin/Documents/dfs/csv_files/gapremium/20180822/gapremium_daily_aggregates_full_20180822.csv to s3://dmd-etl-test/gapremium/20180822/gapremium_daily_aggregates_full_20180822.csv
+[2018-08-29 22:37:13,234] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:37:13,233] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 22:37:13,254] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 22:37:13,254] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 22:37:16,735] {jobs.py:2083} INFO - Task exited with return code 0

@@ -1,0 +1,37 @@
+[2018-03-05 06:01:36,850] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-05 06:01:37,258] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword delete_csv_from_local 2018-03-04T01:00:00 --job_id 2949 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-03-05 06:01:37,638] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:37,638] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-03-05 06:01:37,757] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:37,757] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-03-05 06:01:37,809] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:37,809] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-03-05 06:01:38,141] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,141] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-05 06:01:38,743] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,743] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.delete_csv_from_local 2018-03-04 01:00:00 [queued]>
+[2018-03-05 06:01:38,758] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,758] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.delete_csv_from_local 2018-03-04 01:00:00 [queued]>
+[2018-03-05 06:01:38,758] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,758] {models.py:1318} INFO - 
+[2018-03-05 06:01:38,759] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-05 06:01:38,759] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-03-05 06:01:38,759] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-05 06:01:38,759] {base_task_runner.py:95} INFO - Subtask: 
+[2018-03-05 06:01:38,782] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,782] {models.py:1342} INFO - Executing <Task(BashOperator): delete_csv_from_local> on 2018-03-04 01:00:00
+[2018-03-05 06:01:38,844] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,843] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-03-05 06:01:38,844] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-03-05 06:01:38,845] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,845] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpru5TZE//tmp/airflowtmpru5TZE/delete_csv_from_localBggpog
+[2018-03-05 06:01:38,845] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,845] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/delete_csv_from_local.sh /home/ubuntu/csv_files/doubleclick_search/  20180304  /doubleclick_search_keyword .csv
+[2018-03-05 06:01:38,850] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,849] {bash_operator.py:90} INFO - Output:
+[2018-03-05 06:01:38,852] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,852] {bash_operator.py:94} INFO - /home/ubuntu/csv_files/doubleclick_search/20180304/doubleclick_search_keyword20180304.csv
+[2018-03-05 06:01:38,856] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:38,856] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-03-05 06:01:39,080] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1052-aws x86_64)
+[2018-03-05 06:01:39,080] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - 
+[2018-03-05 06:01:39,080] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - * Documentation:  https://help.ubuntu.com
+[2018-03-05 06:01:39,080] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - * Management:     https://landscape.canonical.com
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - * Support:        https://ubuntu.com/advantage
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - 
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - Get cloud support with Ubuntu Advantage Cloud Guest:
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - http://www.ubuntu.com/business/services/cloud
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - 
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,080] {bash_operator.py:94} INFO - 81 packages can be updated.
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,081] {bash_operator.py:94} INFO - 0 updates are security updates.
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,081] {bash_operator.py:94} INFO - 
+[2018-03-05 06:01:39,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,081] {bash_operator.py:94} INFO - 
+[2018-03-05 06:01:39,085] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,085] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-03-05 06:01:39,088] {base_task_runner.py:95} INFO - Subtask: [2018-03-05 06:01:39,088] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-03-05 06:01:42,267] {jobs.py:2083} INFO - Task exited with return code 0

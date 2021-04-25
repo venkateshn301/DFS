@@ -1,0 +1,11 @@
+[2018-08-29 22:59:51,529] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags
+[2018-08-29 22:59:52,080] {base_executor.py:50} INFO - Adding to queue: airflow run Jobsv31 gapremiuim_dailyaggregatesfull 2015-06-22T00:00:00 --local -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:59:52,083] {sequential_executor.py:40} INFO - Executing command: airflow run Jobsv31 gapremiuim_dailyaggregatesfull 2015-06-22T00:00:00 --local -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:59:52,640] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:59:53,043] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31 gapremiuim_dailyaggregatesfull 2015-06-22T00:00:00 --job_id 104 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 22:59:53,287] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:59:53,287] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 22:59:53,581] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:59:53,581] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:59:53,976] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:59:53,976] {models.py:1120} INFO - Dependencies not met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull 2015-06-22 00:00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids=['sensor_to_check_ga_table_preset']
+[2018-08-29 22:59:53,977] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 22:59:53,977] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 22:59:58,094] {jobs.py:2083} INFO - Task exited with return code 0

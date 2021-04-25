@@ -1,0 +1,38 @@
+[2018-02-23 06:01:35,412] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-02-23 06:01:35,860] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword delete_csv_from_local 2018-02-22T01:00:00 --job_id 2224 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-02-23 06:01:36,304] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:36,303] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-02-23 06:01:36,470] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:36,470] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-02-23 06:01:36,515] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:36,515] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-02-23 06:01:36,801] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:36,801] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-02-23 06:01:37,246] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,246] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.delete_csv_from_local 2018-02-22 01:00:00 [queued]>
+[2018-02-23 06:01:37,264] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,264] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.delete_csv_from_local 2018-02-22 01:00:00 [queued]>
+[2018-02-23 06:01:37,264] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,264] {models.py:1318} INFO - 
+[2018-02-23 06:01:37,264] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-02-23 06:01:37,264] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-02-23 06:01:37,264] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-02-23 06:01:37,265] {base_task_runner.py:95} INFO - Subtask: 
+[2018-02-23 06:01:37,273] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,273] {models.py:1342} INFO - Executing <Task(BashOperator): delete_csv_from_local> on 2018-02-22 01:00:00
+[2018-02-23 06:01:37,328] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,328] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-02-23 06:01:37,328] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-02-23 06:01:37,332] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,332] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmps7eRxJ//tmp/airflowtmps7eRxJ/delete_csv_from_localuwVLPj
+[2018-02-23 06:01:37,332] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,332] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/delete_csv_from_local.sh /home/ubuntu/csv_files/doubleclick_search/  20180222  /doubleclick_search_keyword .csv
+[2018-02-23 06:01:37,336] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,336] {bash_operator.py:90} INFO - Output:
+[2018-02-23 06:01:37,339] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,339] {bash_operator.py:94} INFO - /home/ubuntu/csv_files/doubleclick_search/20180222/doubleclick_search_keyword20180222.csv
+[2018-02-23 06:01:37,345] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,344] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,547] {bash_operator.py:94} INFO - Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1041-aws x86_64)
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,547] {bash_operator.py:94} INFO - 
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - * Documentation:  https://help.ubuntu.com
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - * Management:     https://landscape.canonical.com
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - * Support:        https://ubuntu.com/advantage
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - 
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - Get cloud support with Ubuntu Advantage Cloud Guest:
+[2018-02-23 06:01:37,548] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - http://www.ubuntu.com/business/services/cloud
+[2018-02-23 06:01:37,549] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - 
+[2018-02-23 06:01:37,549] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - 77 packages can be updated.
+[2018-02-23 06:01:37,549] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - 0 updates are security updates.
+[2018-02-23 06:01:37,549] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - 
+[2018-02-23 06:01:37,549] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - 
+[2018-02-23 06:01:37,549] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,548] {bash_operator.py:94} INFO - *** System restart required ***
+[2018-02-23 06:01:37,557] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,557] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-02-23 06:01:37,560] {base_task_runner.py:95} INFO - Subtask: [2018-02-23 06:01:37,560] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-02-23 06:01:40,862] {jobs.py:2083} INFO - Task exited with return code 0

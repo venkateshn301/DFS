@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml"
+xmlns:og="http://opengraph.org/schema/"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Beyond Analysis - QnE Data Extraction Notification</title>
+<style type="text/css"> outlook a {{  padding: 0;  }}
+
+body {{
+width: 100% !important;
+}}
+
+body {{
+-webkit-text-size-adjust: none;
+}}
+
+body {{
+margin: 0;
+padding: 0;
+}}
+
+img {{
+border: none;
+font-size: 14px;
+font-weight: bold;
+height: auto;
+line-height: 100%;
+outline: none;
+text-decoration: none;
+text-transform: capitalize;
+}}
+
+#backgroundTable {{
+height: 100% !important;
+margin: 0;
+padding: 0;
+width: 100% !important;
+}}
+
+body, .backgroundTable {{
+background-color: #ffffff;
+}}
+
+#templateContainer {{
+border: none;
+}}
+
+h1, .h1 {{
+color: #ffffff;
+display: block;
+font-family: Arial;
+font-size: 34px;
+font-weight: bold;
+line-height: 100%;
+margin-bottom: 10px;
+text-align: left;
+}}
+
+h2, .h2 {{
+color: #202020;
+display: block;
+font-family: Arial;
+font-size: 30px;
+font-weight: bold;
+line-height: 100%;
+margin-bottom: 10px;
+text-align: left;
+}}
+
+h3, .h3 {{
+color: #202020;
+display: block;
+font-family: Arial;
+font-size: 26px;
+font-weight: bold;
+line-height: 100%;
+margin-bottom: 10px;
+text-align: left;
+}}
+
+h4, .h4 {{
+color: #202020;
+display: block;
+font-family: Arial;
+font-size: 22px;
+font-weight: bold;
+line-height: 100%;
+margin-bottom: 10px;
+text-align: left;
+}}
+
+#templatePreheader {{
+background-color: #ffffff;
+}}
+
+.preheaderContent div {{
+color: #000000;
+font-family: Arial;
+font-size: 10px;
+line-height: 100%;
+text-align: left;
+}}
+
+.preheaderContent div a:link, .preheaderContent div a:visited {{
+color: #336699;
+font-weight: normal;
+text-decoration: underline;
+}}
+
+.preheaderContent div img {{
+height: auto;
+max-width: 600px;
+}}
+
+#templateHeader {{
+background-color: #ffffff;
+border-bottom: 0;
+padding: 0px;
+}}
+
+.headerContent {{
+color: #202020;
+font-family: Arial;
+font-size: 34px;
+font-weight: bold;
+line-height: 100%;
+padding: 0;
+text-align: center;
+vertical-align: middle;
+}}
+
+.headerContent a:link, .headerContent a:visited {{
+color: #336699;
+font-weight: normal;
+text-decoration: underline;
+}}
+
+#headerImage {{
+height: auto;
+max-width: 600px !important;
+}}
+
+#templateContainer, .bodyContent {{
+background-color: #000000;
+}}
+
+.bodyContent div {{
+color: #000000;
+font-family: Arial;
+font-size: 14px;
+line-height: 150%;
+text-align: left;
+}}
+
+.bodyContent div a:link, .bodyContent div a:visited {{
+color: #336699;
+font-weight: normal;
+text-decoration: underline;
+}}
+
+.bodyContent img {{
+display: inline;
+margin-bottom: 10px;
+}}
+
+#templateFooter {{
+background-color: #ffffff;
+border-top: 0px none;
+}}
+
+.footerContent div {{
+color: #696969;
+font-family: Arial;
+font-size: 12px;
+line-height: 125%;
+text-align: left;
+}}
+
+.footerContent div a:link, .footerContent div a:visited {{
+color: #336699;
+font-weight: normal;
+text-decoration: underline;
+}}
+
+.footerContent img {{
+display: inline;
+}}
+
+#social {{
+background-color: #ffffff;
+border: none;
+}}
+
+#utility {{
+background-color: #ffffff;
+border-top: none;
+}}
+
+#utility div {{
+text-align: center;
+}}
+
+#monkeyRewards img {{
+max-width: 160px;
+}}
+
+body, .backgroundTable {{
+background-color: #ffffff;
+}}
+
+h1, .h1 {{
+font-size: 26px;
+color: #A7A648;
+}}
+
+h2, .h2 {{
+color: #A7A648;
+font-size: 22px;
+}}
+
+h3, .h3 {{
+font-size: 20px;
+color: #A7A648;
+}}
+
+h4, .h4 {{
+color: #A7A648;
+font-size: 16px;
+}}
+
+.preheaderContent div a:link, .preheaderContent div a:visited {{
+color: #A7A648;
+text-decoration: none;
+}}
+
+.headerContent a:link, .headerContent a:visited {{
+color: #A7A648;
+text-decoration: none;
+}}
+
+#templateContainer, .bodyContent {{
+background-color: #ffffff;
+}}
+
+.bodyContent div a:link, .bodyContent div a:visited {{
+color: #A7A648;
+text-decoration: none;
+}}
+
+.footerContent div a:link, .footerContent div a:visited {{
+color: #A7A648;
+text-decoration: none;
+}}
+</style>
+<style type="text/css">
+/* Facebook/Google+ Modals */
+#social-proxy {{
+background: #fff;
+-webkit-box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, .2);
+box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, .2);
+padding-bottom: 35px;
+z-index: 1000;
+}}
+
+#social-proxy_close {{
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+height: 30px;
+width: 32px;
+background: transparent
+url(http://cdn-images.mailchimp.com/awesomebar-sprite.png) 0 -200px;
+text-indent: -9999px;
+outline: none;
+font-size: 1px;
+}}
+
+#social-proxy_close:hover {{
+background-position: 0 -240px;
+}}
+
+body {{
+padding-bottom: 50px !important;
+}}
+</style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0"
+offset="0"
+style="-webkit-text-size-adjust: none; margin: 0; padding: 0; background-color: #ffffff; width: 100% !important;">
+<center>
+		<table border="0" cellpadding="0" cellspacing="0" width="600"
+	id="templateContainer"
+	style="border: none; background-color: #ffffff;">
+			<tr>
+				<td align="center" valign="top">
+					<!-- // Begin Template Header \\ -->
+					<table border="0" cellpadding="0" cellspacing="0" width="600"
+				id="templateHeader"
+				style="background-color: #ffffff; border-bottom: 0; padding: 0px;">
+						<tr>
+							<td class="headerContent"
+						style="color: #202020; font-family: Arial; font-size: 34px; font-weight: bold; line-height: 100%; padding: 0; text-align: center; vertical-align: middle;">
+								<div
+							style="border-bottom: 1px solid #fff; margin-bottom: 10px; padding-bottom: 10px; background-color: #323232; padding: 10px">
+									<!-- // Begin Module: Standard Header Image \\ -->
+									<div style="text-align: left;">
+										<a href="https://www.beyondanalysis.net/uk/"
+									style="color: #A7A648; font-weight: normal; text-decoration: none;"><img
+									width="195"
+									src="http://www.beyondanalysis.net/uk/img/logo.png"></a>
+										</div>
+										<!-- // End Module: Standard Header Image \\ -->
+									</div>
+								</td>
+							</tr>
+						</table> <!-- // End Template Header \\ -->
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top">
+						<table border="0" cellpadding="10" cellspacing="0" width="600"
+				id="templateBody">
+							<tr>
+								<td valign="top" class="bodyContent"
+						style="background-color: #ffffff;">
+									<table border="0" cellpadding="10" cellspacing="0"
+							width="100%">
+										<tr>
+											<td valign="top">
+												<div
+										style="color: #000000; font-family: Arial; font-size: 14px; line-height: 150%; text-align: left;">
+													<span class="Apple-style-span"
+											style="line-height: 14px; text-transform: capitalize;"></span><br>
+																<div
+												style="color: #000000; font-family: Arial; font-size: 12px; line-height: 150%; text-align: left;">
+																	<p
+													style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica">
+																		<span style="font-size: 12px;"><span
+														style="letter-spacing: 0.0px">Dear <span>{name}</span>,</span></span>
+																	</p>
+																	<p
+													style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px">
+													&nbsp;</p>
+																	<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica">
+																		<span style="font-size: 12px;"><span
+														style="letter-spacing: 0.0px">{emailbody}<br/><br/>
+														<table style="font-family: Arial;font-size: 12px" border="0" cellpadding="0" cellspacing="10" >
+															<tr><td>DAG_Id</td><td>{dag_id}</td></tr>
+															<tr><td>Task_Id</td><td>{task_id}</td></tr>
+															<tr><td>Start_Time</td><td>{start_time}</td></tr>
+															<tr><td>End_Time</td><td>{end_time}</td></tr>
+															<tr><td>Duration</td><td>{duration}</td></tr>
+															<tr><td>Log_Location</td><td>{log}</td></tr>
+															<tr><td>URL</td><td>{url}</td></tr>
+
+														</table>
+																			</p>
+																			<p
+													style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px">
+													&nbsp;</p>
+																			<p
+													style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica">
+																				<span style="font-size: 12px;"><span
+														style="letter-spacing: 0.0px">Thanks!</span></span>
+																			</p>
+																			<p
+													style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px">
+													&nbsp;</p>
+																			<p
+													style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica">
+																				<span style="font-size: 12px;"><span
+														style="letter-spacing: 0.0px">Beyond Analysis team</span></span>
+																			</p>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</table> <!-- // End Module: Standard Content \\ -->
+
+																</td>
+															</tr>
+														</table> <!-- // End Template Body \\ -->
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">
+														<!-- // Begin Template Footer \\ -->
+														<div style="font-family:Arial;font-size:10px;padding-bottom:15px;padding-top:15px;background-color: #323232;color: #fff;">Beyond Analysis</div></td>
+																	</tr>
+																</table> <br>
+																</td>
+															</tr>
+														</table>
+													</center>
+												</body>
+											</html>

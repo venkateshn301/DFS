@@ -1,0 +1,77 @@
+[2018-03-10 06:01:14,949] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-10 06:01:15,544] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword cleanse_table 2018-03-09T01:00:00 --job_id 3356 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-03-10 06:01:15,902] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:15,902] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-03-10 06:01:16,089] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,088] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-03-10 06:01:16,149] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,148] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-03-10 06:01:16,452] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,452] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-10 06:01:16,940] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,940] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.cleanse_table 2018-03-09 01:00:00 [queued]>
+[2018-03-10 06:01:16,958] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,957] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.cleanse_table 2018-03-09 01:00:00 [queued]>
+[2018-03-10 06:01:16,958] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,957] {models.py:1318} INFO - 
+[2018-03-10 06:01:16,958] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-10 06:01:16,958] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-03-10 06:01:16,958] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-10 06:01:16,958] {base_task_runner.py:95} INFO - Subtask: 
+[2018-03-10 06:01:16,966] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:16,966] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-03-09 01:00:00
+[2018-03-10 06:01:17,032] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,032] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-03-10 06:01:17,032] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-03-10 06:01:17,033] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,033] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpepXrDf//tmp/airflowtmpepXrDf/cleanse_tableETxcAs
+[2018-03-10 06:01:17,033] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,033] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/clense_table.sh tst_doubleclick_keyword.sql
+[2018-03-10 06:01:17,044] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,044] {bash_operator.py:90} INFO - Output:
+[2018-03-10 06:01:17,055] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,055] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-03-10 06:01:17,058] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,058] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-03-10 06:01:17,278] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1052-aws x86_64)
+[2018-03-10 06:01:17,278] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 
+[2018-03-10 06:01:17,278] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - * Documentation:  https://help.ubuntu.com
+[2018-03-10 06:01:17,278] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - * Management:     https://landscape.canonical.com
+[2018-03-10 06:01:17,278] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - * Support:        https://ubuntu.com/advantage
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - Get cloud support with Ubuntu Advantage Cloud Guest:
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - http://www.ubuntu.com/business/services/cloud
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 82 packages can be updated.
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 0 updates are security updates.
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 
+[2018-03-10 06:01:17,279] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,278] {bash_operator.py:94} INFO - 
+[2018-03-10 06:01:17,280] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,280] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-03-10 06:01:17,281] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,281] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.test_doubleclick_search_keyword
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - (
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - date date,
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - account character varying,
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - campaign character varying,
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - campaignid character varying,
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - campaignstatus character varying,
+[2018-03-10 06:01:17,354] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - keywordid character varying,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - keywordmatchtype character varying,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,350] {bash_operator.py:94} INFO - keywordtext character varying,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - keywordengineid character varying,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - keywordmaxcpc double precision,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - effectivekeywordmaxcpc double precision,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - keywordlabels character varying,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - effectivelabels character varying,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - avgcpc double precision,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - avgcpm double precision,
+[2018-03-10 06:01:17,355] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - avgpos double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - clicks double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - cost double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - ctr double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - impr double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - adwordsconversions double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,351] {bash_operator.py:94} INFO - adwordsconversionvalue double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - visits integer,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - cpa double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - aov double precision,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - calls integer,
+[2018-03-10 06:01:17,356] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - cmbs integer,
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - uniquelands integer,
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - revenue double precision,
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - sales integer,
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - storelocator integer,
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - videochats integer,
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - allconversions integer
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - )
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-03-10 06:01:17,357] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - psql:tst_doubleclick_keyword.sql:36: NOTICE:  relation "test_doubleclick_search_keyword" already exists, skipping
+[2018-03-10 06:01:17,358] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,352] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-03-10 06:01:17,358] {base_task_runner.py:95} INFO - Subtask: [2018-03-10 06:01:17,353] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-03-10 06:01:20,554] {jobs.py:2083} INFO - Task exited with return code 0

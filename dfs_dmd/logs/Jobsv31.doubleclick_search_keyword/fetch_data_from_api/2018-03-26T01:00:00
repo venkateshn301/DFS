@@ -1,0 +1,45 @@
+[2018-03-27 06:00:47,386] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-27 06:00:47,899] {base_task_runner.py:112} INFO - Running: ['bash', '-c', u'airflow run Jobsv31.doubleclick_search_keyword fetch_data_from_api 2018-03-26T01:00:00 --job_id 4582 --raw -sd DAGS_FOLDER/Main_dag.py']
+[2018-03-27 06:00:48,179] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:48,179] {__init__.py:57} INFO - Using executor LocalExecutor
+[2018-03-27 06:00:48,258] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:48,258] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/Grammar.txt
+[2018-03-27 06:00:48,282] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:48,281] {driver.py:120} INFO - Generating grammar tables from /usr/lib/python2.7/lib2to3/PatternGrammar.txt
+[2018-03-27 06:00:48,497] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:48,496] {models.py:167} INFO - Filling up the DagBag from /home/ubuntu/workspace/airflow/dags/Main_dag.py
+[2018-03-27 06:00:49,005] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,005] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.fetch_data_from_api 2018-03-26 01:00:00 [queued]>
+[2018-03-27 06:00:49,023] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,023] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.doubleclick_search_keyword.fetch_data_from_api 2018-03-26 01:00:00 [queued]>
+[2018-03-27 06:00:49,023] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,023] {models.py:1318} INFO - 
+[2018-03-27 06:00:49,023] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-27 06:00:49,023] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-03-27 06:00:49,024] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-03-27 06:00:49,024] {base_task_runner.py:95} INFO - Subtask: 
+[2018-03-27 06:00:49,032] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,032] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-03-26 01:00:00
+[2018-03-27 06:00:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,076] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-03-27 06:00:49,076] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-03-27 06:00:49,077] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,077] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpcTQJzo//tmp/airflowtmpcTQJzo/fetch_data_from_apifUfxvj
+[2018-03-27 06:00:49,077] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,077] {bash_operator.py:81} INFO - Running command: /home/ubuntu/workspace/airflow/bash/fetch_data.sh --api-provider=doubleclick_search --dataset=keyword --csv-file=/home/ubuntu/csv_files/doubleclick_search/ --start-date= --end-date=  20180326  /doubleclick_search_keyword .csv 2018-03-26
+[2018-03-27 06:00:49,081] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,081] {bash_operator.py:90} INFO - Output:
+[2018-03-27 06:00:49,084] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,083] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-03-27 06:00:49,084] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,084] {bash_operator.py:94} INFO - --api-provider=doubleclick_search --dataset=keyword --csv-file=/home/ubuntu/csv_files/doubleclick_search/20180326/doubleclick_search_keyword20180326.csv --start-date=2018-03-26 --end-date=2018-03-26
+[2018-03-27 06:00:49,088] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,088] {bash_operator.py:94} INFO - Pseudo-terminal will not be allocated because stdin is not a terminal.
+[2018-03-27 06:00:49,299] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1052-aws x86_64)
+[2018-03-27 06:00:49,299] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - 
+[2018-03-27 06:00:49,299] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - * Documentation:  https://help.ubuntu.com
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - * Management:     https://landscape.canonical.com
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - * Support:        https://ubuntu.com/advantage
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - 
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,299] {bash_operator.py:94} INFO - Get cloud support with Ubuntu Advantage Cloud Guest:
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,300] {bash_operator.py:94} INFO - http://www.ubuntu.com/business/services/cloud
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,300] {bash_operator.py:94} INFO - 
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,300] {bash_operator.py:94} INFO - 93 packages can be updated.
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,300] {bash_operator.py:94} INFO - 1 update is a security update.
+[2018-03-27 06:00:49,300] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,300] {bash_operator.py:94} INFO - 
+[2018-03-27 06:00:49,301] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,300] {bash_operator.py:94} INFO - 
+[2018-03-27 06:00:49,309] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:49,309] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-03-27 06:00:50,770] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:00:50,770] {bash_operator.py:94} INFO - stty: 'standard input': Inappropriate ioctl for device
+[2018-03-27 06:01:02,286] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,286] {bash_operator.py:94} INFO - 
+[2018-03-27 06:01:02,287] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,286] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='doubleclick_search', csv_file='/home/ubuntu/csv_files/doubleclick_search/20180326/doubleclick_search_keyword20180326.csv', dataset='keyword', end_date=datetime.date(2018, 3, 26), file_path=None, start_date=datetime.date(2018, 3, 26))
+[2018-03-27 06:01:02,287] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,286] {bash_operator.py:94} INFO - File status is False, sleeping for 10 seconds.
+[2018-03-27 06:01:02,287] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,287] {bash_operator.py:94} INFO - File status is True, ready to download.
+[2018-03-27 06:01:02,287] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,287] {bash_operator.py:94} INFO - File AAAnecuXeCPY_yRm downloaded to /home/ubuntu/csv_files/doubleclick_search/20180326/doubleclick_search_keyword20180326.csv
+[2018-03-27 06:01:02,287] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,287] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-03-27 06:01:02,367] {base_task_runner.py:95} INFO - Subtask: [2018-03-27 06:01:02,367] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-03-27 06:01:02,942] {jobs.py:2083} INFO - Task exited with return code 0

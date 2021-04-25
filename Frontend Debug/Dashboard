@@ -1,0 +1,134 @@
+USER:uk.area@beyond
+
+OVERVIEW:
+
+2018-05-24 11:14:44,905 - 
+db_broker.worker - DEBUG - b'{"clientorg":"dfs001",
+"comparison_period":"none",
+"dimension":"",
+"filters_and":[],
+"period_span":"month_c",
+"period_type":"current",
+"product":"transform",
+"request_type":"page",
+"user_id":"da8e3503-125c-4fe9-9118-fb94034735e5",
+"view":"dashboard",
+"uid":"fe93c763a9797ecac0330cb06a3669c1ce293352"}'
+
+
+
+2018-05-24 11:14:44,905 - db_broker.request_processor - DEBUG - REQUEST: 
+{'uid': 'fe93c763a9797ecac0330cb06a3669c1ce293352', 
+'view': 'dashboard', 'request_type': 'page',
+ 'clientorg': 'dfs001', 
+'period_type': 'current', 
+'period_span': 'month_c', 
+'comparison_period': 'none',
+ 'user_id': 'da8e3503-125c-4fe9-9118-fb94034735e5', 
+'dimension': '', 
+'filters_and': [],
+ 'product': 'transform'}
+
+LOCATION:1.AREA
+==================
+
+
+db_broker.worker - DEBUG -b:
+============================
+
+'{"clientorg":"dfs001",
+
+"request_type":"campaign_listing",
+
+"user_id":"da8e3503-125c-4fe9-9118-fb94034735e5",
+
+"uid":"1ee2ab057851bda2e30a0e7a06c880778eef3d56"}'
+
+db_broker.request_processor - DEBUG - REQUEST:
+=============================================
+
+ {'uid': '1ee2ab057851bda2e30a0e7a06c880778eef3d56', 
+
+'user_id': 'da8e3503-125c-4fe9-9118-fb94034735e5',
+
+ 'request_type': 'campaign_listing',
+
+ 'clientorg': 'dfs001'}
+
+db_broker.worker - DEBUG - b
+============================
+
+'{"clientorg":"dfs001",
+
+"comparison_period":"none",
+
+"dimension":"district",
+
+"filters_and":[],
+
+"period_span":"month_c",
+
+"period_type":"current",
+
+"product":"transform",
+
+"request_type":"page",
+
+"user_id":"da8e3503-125c-4fe9-9118-fb94034735e5",
+
+"view":"location",
+
+"uid":"7634038b21e139682ab0a8ba2d9ca9ffd4745692"}'
+
+db_broker.request_processor -DEBUG - REQUEST: 
+=============================================
+
+{'uid': '7634038b21e139682ab0a8ba2d9ca9ffd4745692',
+
+'view': 'location', 
+
+'request_type': 'page', 
+
+'clientorg': 'dfs001', 
+
+'period_type': 'current', 
+
+'period_span': 'month_c', 
+
+'comparison_period': 'none', 
+
+'user_id': 'da8e3503-125c-4fe9-9118-fb94034735e5', 
+
+'dimension': 'district', 
+
+'filters_and': [], 
+
+'product': 'transform'}
+
+2018-05-24 11:35:36,132 - db_broker.framebuilder - DEBUG - FILTER: district_sid == '17'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

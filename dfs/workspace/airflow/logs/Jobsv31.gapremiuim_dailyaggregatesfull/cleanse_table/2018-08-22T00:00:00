@@ -1,0 +1,313 @@
+[2018-08-29 11:09:13,248] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:09:13,634] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 68 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:09:13,928] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:13,928] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:09:14,198] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,197] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:09:14,660] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,659] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:09:14,663] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,663] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:09:14,663] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,663] {models.py:1318} INFO - 
+[2018-08-29 11:09:14,663] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:09:14,663] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 11:09:14,663] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:09:14,663] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:09:14,675] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,675] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 11:09:14,686] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,686] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:09:14,686] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:09:14,687] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,687] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmphktsy8jj//tmp/airflowtmphktsy8jj/cleanse_tableng1i8sfg
+[2018-08-29 11:09:14,687] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,687] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 11:09:14,689] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,689] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:09:14,691] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,691] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 11:09:14,691] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,691] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:09:14,693] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:14,693] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 11:09:15,837] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,837] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 11:09:15,838] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,837] {bash_operator.py:94} INFO - (
+[2018-08-29 11:09:15,838] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,838] {bash_operator.py:94} INFO - date date,
+[2018-08-29 11:09:15,838] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,838] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 11:09:15,839] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,838] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 11:09:15,839] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,839] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 11:09:15,839] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,839] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 11:09:15,839] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,839] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 11:09:15,840] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,839] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 11:09:15,840] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,840] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 11:09:15,840] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,840] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 11:09:15,841] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,840] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 11:09:15,841] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,840] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 11:09:15,842] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,840] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 11:09:15,842] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,840] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 11:09:15,843] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,841] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 11:09:15,843] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,841] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 11:09:15,843] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,841] {bash_operator.py:94} INFO - );
+[2018-08-29 11:09:15,999] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:15,998] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 11:09:16,005] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:16,001] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 11:09:16,005] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:09:16,002] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:09:16,036] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:09:16,036] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:09:18,665] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:18:08,483] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:18:08,857] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 73 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:18:09,168] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,168] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:18:09,433] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,433] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:18:09,800] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,800] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:18:09,804] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,804] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:18:09,804] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,804] {models.py:1318} INFO - 
+[2018-08-29 11:18:09,804] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:18:09,805] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 11:18:09,805] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:18:09,805] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:18:09,816] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,816] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 11:18:09,826] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,826] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:18:09,826] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:18:09,827] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,827] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp447jmm1m//tmp/airflowtmp447jmm1m/cleanse_tableg1puifd7
+[2018-08-29 11:18:09,827] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,827] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 11:18:09,830] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,830] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:18:09,831] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,831] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 11:18:09,831] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,831] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:18:09,833] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:09,833] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 11:18:11,034] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,031] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 11:18:11,034] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,032] {bash_operator.py:94} INFO - (
+[2018-08-29 11:18:11,034] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,032] {bash_operator.py:94} INFO - date date,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,032] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,032] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,032] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,032] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 11:18:11,035] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 11:18:11,036] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 11:18:11,036] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 11:18:11,036] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 11:18:11,037] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 11:18:11,037] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,033] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 11:18:11,037] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,034] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 11:18:11,037] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,034] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 11:18:11,037] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,034] {bash_operator.py:94} INFO - );
+[2018-08-29 11:18:11,198] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,198] {bash_operator.py:94} INFO - psql:/home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql:18: NOTICE:  relation "gapremium_daily_visits_3" already exists, skipping
+[2018-08-29 11:18:11,199] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,198] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 11:18:11,200] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,200] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 11:18:11,201] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:18:11,200] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:18:11,236] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:18:11,236] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:18:13,861] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:24:30,698] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:24:31,094] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 78 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:24:31,378] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:31,377] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:24:31,655] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:31,654] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:24:32,040] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,040] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:24:32,044] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,044] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:24:32,045] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,044] {models.py:1318} INFO - 
+[2018-08-29 11:24:32,045] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:24:32,045] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 11:24:32,045] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:24:32,045] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:24:32,059] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,059] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 11:24:32,069] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,069] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:24:32,069] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:24:32,069] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,069] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpkkm92vyz//tmp/airflowtmpkkm92vyz/cleanse_table4xjzwa7u
+[2018-08-29 11:24:32,070] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,069] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 11:24:32,073] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,073] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:24:32,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,074] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 11:24:32,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,074] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:24:32,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:32,075] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 11:24:33,218] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,217] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 11:24:33,219] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,218] {bash_operator.py:94} INFO - (
+[2018-08-29 11:24:33,219] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,219] {bash_operator.py:94} INFO - date date,
+[2018-08-29 11:24:33,219] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,219] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 11:24:33,220] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,219] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 11:24:33,220] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,219] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 11:24:33,220] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,220] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 11:24:33,220] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,220] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 11:24:33,221] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,220] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 11:24:33,221] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,220] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 11:24:33,221] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,220] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 11:24:33,222] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,221] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 11:24:33,222] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,221] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 11:24:33,222] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,221] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 11:24:33,222] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,221] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 11:24:33,223] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,222] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 11:24:33,223] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,222] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 11:24:33,223] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,222] {bash_operator.py:94} INFO - );
+[2018-08-29 11:24:33,374] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,373] {bash_operator.py:94} INFO - psql:/home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql:18: NOTICE:  relation "gapremium_daily_visits_3" already exists, skipping
+[2018-08-29 11:24:33,374] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,373] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 11:24:33,377] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,376] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 11:24:33,381] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:24:33,377] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:24:33,409] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:24:33,410] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:24:36,149] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:37:10,258] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:37:10,678] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 83 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:37:10,955] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:10,955] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:37:11,227] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,227] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:37:11,610] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,610] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:37:11,614] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,614] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:37:11,614] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,614] {models.py:1318} INFO - 
+[2018-08-29 11:37:11,614] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:37:11,614] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 11:37:11,614] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:37:11,614] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:37:11,625] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,625] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 11:37:11,635] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,635] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:37:11,635] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:37:11,636] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,636] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpw15enzoq//tmp/airflowtmpw15enzoq/cleanse_table8o328_un
+[2018-08-29 11:37:11,636] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,636] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 11:37:11,639] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,639] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:37:11,641] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,641] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 11:37:11,641] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,641] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:37:11,642] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:11,642] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 11:37:12,801] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,799] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 11:37:12,802] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,801] {bash_operator.py:94} INFO - (
+[2018-08-29 11:37:12,802] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,801] {bash_operator.py:94} INFO - date date,
+[2018-08-29 11:37:12,803] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,802] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 11:37:12,803] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,803] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 11:37:12,803] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,803] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 11:37:12,804] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,803] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 11:37:12,804] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,804] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 11:37:12,805] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,804] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 11:37:12,806] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,805] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 11:37:12,806] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,805] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 11:37:12,807] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,806] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 11:37:12,807] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,806] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 11:37:12,808] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,807] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 11:37:12,808] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,807] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 11:37:12,809] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,808] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 11:37:12,809] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,809] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 11:37:12,810] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,809] {bash_operator.py:94} INFO - );
+[2018-08-29 11:37:12,955] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,954] {bash_operator.py:94} INFO - psql:/home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql:18: NOTICE:  relation "gapremium_daily_visits_3" already exists, skipping
+[2018-08-29 11:37:12,955] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,955] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 11:37:12,956] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,956] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 11:37:12,961] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:37:12,957] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:37:12,979] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:37:12,980] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:37:15,718] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:40:15,109] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:40:15,501] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 88 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:40:15,809] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:15,809] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:40:16,091] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,091] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:40:16,491] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,491] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:40:16,495] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,495] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:40:16,495] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,495] {models.py:1318} INFO - 
+[2018-08-29 11:40:16,496] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:40:16,496] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 11:40:16,496] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:40:16,496] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:40:16,507] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,507] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 11:40:16,520] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,519] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:40:16,520] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:40:16,521] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,521] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpp3o3goba//tmp/airflowtmpp3o3goba/cleanse_tables_xg0rd9
+[2018-08-29 11:40:16,522] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,521] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 11:40:16,525] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,525] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:40:16,526] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,526] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 11:40:16,527] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,527] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:40:16,528] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:16,528] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 11:40:17,672] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,666] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 11:40:17,672] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,667] {bash_operator.py:94} INFO - (
+[2018-08-29 11:40:17,673] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,667] {bash_operator.py:94} INFO - date date,
+[2018-08-29 11:40:17,673] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,667] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 11:40:17,673] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,668] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 11:40:17,674] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,668] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 11:40:17,674] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,668] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 11:40:17,674] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,669] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 11:40:17,674] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,670] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 11:40:17,674] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,670] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 11:40:17,675] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,671] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 11:40:17,675] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,671] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 11:40:17,676] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,676] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 11:40:17,677] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,676] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 11:40:17,677] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,677] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 11:40:17,678] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,677] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 11:40:17,678] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,678] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 11:40:17,679] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,679] {bash_operator.py:94} INFO - );
+[2018-08-29 11:40:17,827] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,825] {bash_operator.py:94} INFO - psql:/home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql:18: NOTICE:  relation "gapremium_daily_visits_3" already exists, skipping
+[2018-08-29 11:40:17,827] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,826] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 11:40:17,829] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,829] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 11:40:17,830] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:40:17,829] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:40:17,858] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:40:17,858] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:40:20,525] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 11:43:31,705] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:43:32,096] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 93 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 11:43:32,399] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:32,399] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 11:43:32,676] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:32,676] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 11:43:33,060] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,059] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:43:33,064] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,063] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 11:43:33,064] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,064] {models.py:1318} INFO - 
+[2018-08-29 11:43:33,064] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:43:33,064] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 11:43:33,064] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 11:43:33,064] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 11:43:33,077] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,077] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 11:43:33,087] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,087] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 11:43:33,087] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 11:43:33,088] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,087] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmppr3y2jf_//tmp/airflowtmppr3y2jf_/cleanse_table4iwcol3p
+[2018-08-29 11:43:33,088] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,088] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 11:43:33,091] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,091] {bash_operator.py:90} INFO - Output:
+[2018-08-29 11:43:33,092] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,092] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 11:43:33,092] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,092] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 11:43:33,094] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:33,094] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - (
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - date date,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,297] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 11:43:34,298] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,298] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 11:43:34,299] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,298] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 11:43:34,299] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,298] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 11:43:34,299] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,298] {bash_operator.py:94} INFO - );
+[2018-08-29 11:43:34,461] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,460] {bash_operator.py:94} INFO - psql:/home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql:18: NOTICE:  relation "gapremium_daily_visits_3" already exists, skipping
+[2018-08-29 11:43:34,463] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,461] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 11:43:34,473] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,466] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 11:43:34,474] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 11:43:34,468] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 11:43:34,509] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 11:43:34,509] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 11:43:37,132] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 22:32:17,816] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:32:18,273] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull cleanse_table 2018-08-22T00:00:00 --job_id 100 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 22:32:18,519] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:18,519] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 22:32:18,800] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:18,800] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 22:32:19,219] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,219] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 22:32:19,223] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,223] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.cleanse_table 2018-08-22 00:00:00 [queued]>
+[2018-08-29 22:32:19,224] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,224] {models.py:1318} INFO - 
+[2018-08-29 22:32:19,224] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 22:32:19,224] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 22:32:19,224] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 22:32:19,224] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 22:32:19,272] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,272] {models.py:1342} INFO - Executing <Task(BashOperator): cleanse_table> on 2018-08-22 00:00:00
+[2018-08-29 22:32:19,286] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,286] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 22:32:19,286] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 22:32:19,287] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,287] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpnpttgs47//tmp/airflowtmpnpttgs47/cleanse_tablepvobt9_r
+[2018-08-29 22:32:19,288] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,287] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/clense_table.sh /home/baadmin/Documents/dfs/workspace/dfs_dmd_etl/sqlscripts/tablescripts/gapremium_daily_aggregates_full.sql
+[2018-08-29 22:32:19,292] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,292] {bash_operator.py:90} INFO - Output:
+[2018-08-29 22:32:19,293] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,293] {bash_operator.py:94} INFO - ========executing create_table sh!!!===============
+[2018-08-29 22:32:19,293] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,293] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 22:32:19,295] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:19,295] {bash_operator.py:94} INFO - ========executing this cleanse_tables===============
+[2018-08-29 22:32:42,890] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,888] {bash_operator.py:94} INFO - CREATE TABLE IF NOT EXISTS dmd_staging.gapremium_daily_visits_3
+[2018-08-29 22:32:42,891] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,889] {bash_operator.py:94} INFO - (
+[2018-08-29 22:32:42,891] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,889] {bash_operator.py:94} INFO - date date,
+[2018-08-29 22:32:42,891] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,889] {bash_operator.py:94} INFO - country character varying,
+[2018-08-29 22:32:42,891] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,889] {bash_operator.py:94} INFO - device character varying,
+[2018-08-29 22:32:42,891] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,889] {bash_operator.py:94} INFO - medium character varying,
+[2018-08-29 22:32:42,894] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,890] {bash_operator.py:94} INFO - source character varying,
+[2018-08-29 22:32:42,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,892] {bash_operator.py:94} INFO - hostname character varying,
+[2018-08-29 22:32:42,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,892] {bash_operator.py:94} INFO - original_country character varying,
+[2018-08-29 22:32:42,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,892] {bash_operator.py:94} INFO - totaltransactions integer,
+[2018-08-29 22:32:42,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,892] {bash_operator.py:94} INFO - totaltransactionsrevenue double precision,
+[2018-08-29 22:32:42,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,893] {bash_operator.py:94} INFO - totaltime double precision,
+[2018-08-29 22:32:42,896] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,893] {bash_operator.py:94} INFO - totalbounces integer,
+[2018-08-29 22:32:42,896] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,893] {bash_operator.py:94} INFO - totalhits integer,
+[2018-08-29 22:32:42,896] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,893] {bash_operator.py:94} INFO - totalpageviews integer,
+[2018-08-29 22:32:42,897] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,893] {bash_operator.py:94} INFO - totalnewvisits integer,
+[2018-08-29 22:32:42,897] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,893] {bash_operator.py:94} INFO - totalvisits integer
+[2018-08-29 22:32:42,897] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:42,894] {bash_operator.py:94} INFO - );
+[2018-08-29 22:32:56,625] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:56,625] {bash_operator.py:94} INFO - CREATE TABLE
+[2018-08-29 22:32:56,627] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:56,627] {bash_operator.py:94} INFO - =====create_table_success=========
+[2018-08-29 22:32:56,630] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 22:32:56,627] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 22:32:56,667] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 22:32:56,667] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 22:32:58,378] {jobs.py:2083} INFO - Task exited with return code 0

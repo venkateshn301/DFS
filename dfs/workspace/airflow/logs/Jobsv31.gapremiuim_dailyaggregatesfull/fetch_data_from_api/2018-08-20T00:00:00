@@ -1,0 +1,270 @@
+[2018-08-28 23:42:28,884] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-28 23:42:29,276] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 3 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-28 23:42:29,565] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:29,565] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-28 23:42:29,837] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:29,836] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-28 23:42:30,188] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,188] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-28 23:42:30,191] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,191] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-28 23:42:30,192] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,191] {models.py:1318} INFO - 
+[2018-08-28 23:42:30,192] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-28 23:42:30,192] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-28 23:42:30,192] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-28 23:42:30,192] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-28 23:42:30,206] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,206] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-28 23:42:30,216] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,216] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-28 23:42:30,216] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-28 23:42:30,216] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,216] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpdumthhu4//tmp/airflowtmpdumthhu4/fetch_data_from_api7zmsk3um
+[2018-08-28 23:42:30,216] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,216] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-28 23:42:30,219] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,218] {bash_operator.py:90} INFO - Output:
+[2018-08-28 23:42:30,220] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,220] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-28 23:42:30,221] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,221] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-28 23:42:30,221] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:30,221] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-28 23:42:53,907] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:53,907] {bash_operator.py:94} INFO - 
+[2018-08-28 23:42:53,907] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:53,907] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-28 23:42:53,907] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:53,907] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-28 23:42:53,907] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:53,907] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-28 23:42:53,907] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:53,907] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-28 23:42:53,908] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:53,907] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-28 23:42:54,018] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:42:54,018] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-28 23:42:54,052] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-28 23:42:54,052] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-28 23:42:54,308] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-28 23:51:54,406] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-28 23:51:54,797] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 3 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-28 23:51:55,054] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,053] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-28 23:51:55,322] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,321] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-28 23:51:55,691] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,690] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-28 23:51:55,694] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,694] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-28 23:51:55,695] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,694] {models.py:1318} INFO - 
+[2018-08-28 23:51:55,695] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-28 23:51:55,695] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-28 23:51:55,695] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-28 23:51:55,695] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-28 23:51:55,708] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,708] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-28 23:51:55,718] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,718] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-28 23:51:55,718] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-28 23:51:55,719] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,719] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpwwx7wrjt//tmp/airflowtmpwwx7wrjt/fetch_data_from_apixgtxmt6r
+[2018-08-28 23:51:55,719] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,719] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-28 23:51:55,722] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,722] {bash_operator.py:90} INFO - Output:
+[2018-08-28 23:51:55,723] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,723] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-28 23:51:55,723] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,723] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-28 23:51:55,723] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:51:55,723] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-28 23:52:31,475] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,475] {bash_operator.py:94} INFO - 
+[2018-08-28 23:52:31,475] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,475] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-28 23:52:31,475] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,475] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-28 23:52:31,475] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,475] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-28 23:52:31,475] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,475] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-28 23:52:31,475] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,475] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-28 23:52:31,579] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:52:31,579] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-28 23:52:31,597] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-28 23:52:31,597] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-28 23:52:34,889] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-28 23:58:41,045] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-28 23:58:41,595] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 8 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-28 23:58:41,876] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:41,876] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-28 23:58:42,160] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,160] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-28 23:58:42,554] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,554] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-28 23:58:42,560] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,559] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-28 23:58:42,560] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,560] {models.py:1318} INFO - 
+[2018-08-28 23:58:42,560] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-28 23:58:42,560] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-28 23:58:42,560] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-28 23:58:42,560] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-28 23:58:42,577] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,577] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-28 23:58:42,588] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,588] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-28 23:58:42,588] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-28 23:58:42,589] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,589] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpibrv_n8f//tmp/airflowtmpibrv_n8f/fetch_data_from_api3l58tw4o
+[2018-08-28 23:58:42,589] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,589] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-28 23:58:42,592] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,592] {bash_operator.py:90} INFO - Output:
+[2018-08-28 23:58:42,593] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,593] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-28 23:58:42,593] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,593] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-28 23:58:42,593] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:58:42,593] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-28 23:59:02,140] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,139] {bash_operator.py:94} INFO - 
+[2018-08-28 23:59:02,140] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,139] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-28 23:59:02,140] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,139] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-28 23:59:02,140] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,139] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-28 23:59:02,140] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,139] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-28 23:59:02,140] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,139] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-28 23:59:02,294] {base_task_runner.py:95} INFO - Subtask: [2018-08-28 23:59:02,291] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-28 23:59:02,305] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-28 23:59:02,306] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-28 23:59:06,648] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 00:03:41,489] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:03:41,849] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 13 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:03:42,108] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,108] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:03:42,375] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,375] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:03:42,753] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,753] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:03:42,757] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,757] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:03:42,757] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,757] {models.py:1318} INFO - 
+[2018-08-29 00:03:42,757] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:03:42,757] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 00:03:42,757] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:03:42,757] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:03:42,772] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,772] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-29 00:03:42,782] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,782] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:03:42,782] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:03:42,783] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,783] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp3n7midix//tmp/airflowtmp3n7midix/fetch_data_from_apiv993kwmh
+[2018-08-29 00:03:42,783] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,783] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-29 00:03:42,785] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,785] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:03:42,787] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,787] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-29 00:03:42,787] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,787] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-29 00:03:42,787] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:42,787] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:03:57,404] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,403] {bash_operator.py:94} INFO - 
+[2018-08-29 00:03:57,404] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,403] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-29 00:03:57,404] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,404] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-29 00:03:57,404] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,404] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-29 00:03:57,404] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,404] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-29 00:03:57,405] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,404] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-29 00:03:57,546] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:03:57,545] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:03:57,566] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:03:57,566] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:04:01,922] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 00:06:34,291] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:06:34,677] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 18 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:06:34,987] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:34,987] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:06:35,649] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:35,648] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:06:36,171] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,171] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:06:36,175] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,175] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:06:36,175] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,175] {models.py:1318} INFO - 
+[2018-08-29 00:06:36,175] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:06:36,175] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 00:06:36,175] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:06:36,175] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:06:36,190] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,190] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-29 00:06:36,200] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,200] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:06:36,200] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:06:36,207] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,207] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpd9i1vo64//tmp/airflowtmpd9i1vo64/fetch_data_from_apic4uhu5kg
+[2018-08-29 00:06:36,207] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,207] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-29 00:06:36,211] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,211] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:06:36,215] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,214] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-29 00:06:36,215] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,215] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-29 00:06:36,216] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:36,216] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:06:51,010] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,009] {bash_operator.py:94} INFO - 
+[2018-08-29 00:06:51,010] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,010] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-29 00:06:51,010] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,010] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-29 00:06:51,011] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,010] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-29 00:06:51,011] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,010] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-29 00:06:51,011] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,010] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-29 00:06:51,190] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:06:51,188] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:06:51,226] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:06:51,226] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:06:54,728] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 00:08:35,522] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:08:35,916] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 23 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:08:36,168] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,167] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:08:36,431] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,430] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:08:36,793] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,792] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:08:36,796] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,796] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:08:36,796] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,796] {models.py:1318} INFO - 
+[2018-08-29 00:08:36,796] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:08:36,796] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 00:08:36,796] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:08:36,796] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:08:36,811] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,811] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-29 00:08:36,821] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,821] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:08:36,821] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:08:36,822] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,822] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpm8a6nnp9//tmp/airflowtmpm8a6nnp9/fetch_data_from_apia3y2dz5m
+[2018-08-29 00:08:36,822] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,822] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-29 00:08:36,825] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,825] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:08:36,826] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,826] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-29 00:08:36,826] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,826] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-29 00:08:36,826] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:36,826] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:08:47,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,073] {bash_operator.py:94} INFO - 
+[2018-08-29 00:08:47,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,073] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-29 00:08:47,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,073] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-29 00:08:47,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,073] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-29 00:08:47,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,074] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-29 00:08:47,074] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,074] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-29 00:08:47,194] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:08:47,191] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:08:47,216] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:08:47,217] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:08:50,936] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 00:14:43,434] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:14:43,793] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 28 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:14:44,087] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,087] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:14:44,351] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,351] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:14:44,722] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,722] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:14:44,730] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,730] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:14:44,731] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,730] {models.py:1318} INFO - 
+[2018-08-29 00:14:44,731] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:14:44,731] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 00:14:44,731] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:14:44,731] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:14:44,753] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,752] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-29 00:14:44,775] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,775] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:14:44,775] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:14:44,777] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,776] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpvt4thhj8//tmp/airflowtmpvt4thhj8/fetch_data_from_apid9sb7p3y
+[2018-08-29 00:14:44,777] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,776] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-29 00:14:44,782] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,781] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:14:44,785] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,785] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-29 00:14:44,786] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,786] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-29 00:14:44,786] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:44,786] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:14:54,310] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,310] {bash_operator.py:94} INFO - 
+[2018-08-29 00:14:54,310] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,310] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-29 00:14:54,311] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,310] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-29 00:14:54,311] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,310] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-29 00:14:54,311] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,310] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-29 00:14:54,311] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,310] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-29 00:14:54,421] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:14:54,420] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:14:54,443] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:14:54,443] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:14:58,841] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 00:16:38,567] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:16:38,966] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 33 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:16:39,251] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,251] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:16:39,510] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,510] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:16:39,861] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,861] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:16:39,865] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,865] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:16:39,865] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,865] {models.py:1318} INFO - 
+[2018-08-29 00:16:39,865] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:16:39,865] {base_task_runner.py:95} INFO - Subtask: Starting attempt 3 of 4
+[2018-08-29 00:16:39,865] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:16:39,865] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:16:39,879] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,879] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-29 00:16:39,889] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,889] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:16:39,890] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:16:39,890] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,890] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmplrcz1xht//tmp/airflowtmplrcz1xht/fetch_data_from_apikqibnm5a
+[2018-08-29 00:16:39,891] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,890] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-29 00:16:39,894] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,894] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:16:39,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,895] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-29 00:16:39,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,895] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-29 00:16:39,895] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:39,895] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:16:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,076] {bash_operator.py:94} INFO - 
+[2018-08-29 00:16:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,076] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-29 00:16:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,076] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-29 00:16:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,076] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-29 00:16:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,076] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-29 00:16:49,076] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,076] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-29 00:16:49,204] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:16:49,203] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:16:49,268] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:16:49,268] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:16:53,967] {jobs.py:2083} INFO - Task exited with return code 0
+[2018-08-29 00:37:17,042] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:37:17,430] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull fetch_data_from_api 2018-08-20T00:00:00 --job_id 38 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:37:17,719] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:17,719] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:37:18,016] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,016] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:37:18,437] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,437] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:37:18,441] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,441] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.fetch_data_from_api 2018-08-20 00:00:00 [queued]>
+[2018-08-29 00:37:18,441] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,441] {models.py:1318} INFO - 
+[2018-08-29 00:37:18,441] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:37:18,441] {base_task_runner.py:95} INFO - Subtask: Starting attempt 4 of 4
+[2018-08-29 00:37:18,441] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:37:18,441] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:37:18,456] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,455] {models.py:1342} INFO - Executing <Task(BashOperator): fetch_data_from_api> on 2018-08-20 00:00:00
+[2018-08-29 00:37:18,465] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,465] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:37:18,466] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:37:18,466] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,466] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp4vrts1gq//tmp/airflowtmp4vrts1gq/fetch_data_from_api5pa_1xeu
+[2018-08-29 00:37:18,466] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,466] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/fetch_data.sh --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/ --start-date= --end-date=  20180820  /gapremium_daily_aggregates_full_ .csv 2018-08-20 --file-path=/home/baadmin/Documents/dfs/csv_files/criteo/ /reorder_criteo_campaigns_
+[2018-08-29 00:37:18,469] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,469] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:37:18,471] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,470] {bash_operator.py:94} INFO - ========executing file in airflow!!!===============
+[2018-08-29 00:37:18,471] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,471] {bash_operator.py:94} INFO - --api-provider=gapremium --dataset=daily_aggregates_full --csv-file=/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv --start-date=2018-08-20 --end-date=2018-08-20
+[2018-08-29 00:37:18,471] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:18,471] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:37:29,458] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,458] {bash_operator.py:94} INFO - 
+[2018-08-29 00:37:29,459] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,458] {bash_operator.py:94} INFO - ARGS:  Namespace(api_provider='gapremium', csv_file='/home/baadmin/Documents/dfs/csv_files/gapremium/20180820/gapremium_daily_aggregates_full_20180820.csv', dataset='daily_aggregates_full', end_date=datetime.date(2018, 8, 20), file_path='/home/baadmin/Documents/dfs/csv_files/criteo/20180820/reorder_criteo_campaigns_20180820.csv', start_date=datetime.date(2018, 8, 20))
+[2018-08-29 00:37:29,459] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,458] {bash_operator.py:94} INFO - 'Job not yet complete.'
+[2018-08-29 00:37:29,459] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,458] {bash_operator.py:94} INFO - Rows Returned  1179
+[2018-08-29 00:37:29,459] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,458] {bash_operator.py:94} INFO - Total Rows  1179
+[2018-08-29 00:37:29,459] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,458] {bash_operator.py:94} INFO - Data Extraction completed
+[2018-08-29 00:37:29,570] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:37:29,569] {bash_operator.py:97} INFO - Command exited with return code 0
+[2018-08-29 00:37:29,610] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 00:37:29,610] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 00:37:32,443] {jobs.py:2083} INFO - Task exited with return code 0

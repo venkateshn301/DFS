@@ -1,0 +1,161 @@
+[2018-08-29 00:43:18,720] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:43:19,097] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull insert_csv_to_db 2018-08-21T00:00:00 --job_id 45 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 00:43:19,350] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:19,350] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 00:43:19,611] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:19,611] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 00:43:19,964] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:19,964] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.insert_csv_to_db 2018-08-21 00:00:00 [queued]>
+[2018-08-29 00:43:19,968] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:19,968] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.insert_csv_to_db 2018-08-21 00:00:00 [queued]>
+[2018-08-29 00:43:19,968] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:19,968] {models.py:1318} INFO - 
+[2018-08-29 00:43:19,968] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:43:19,969] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 4
+[2018-08-29 00:43:19,969] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 00:43:19,969] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 00:43:20,015] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,015] {models.py:1342} INFO - Executing <Task(BashOperator): insert_csv_to_db> on 2018-08-21 00:00:00
+[2018-08-29 00:43:20,036] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,036] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 00:43:20,036] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 00:43:20,038] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,037] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmp7882jsud//tmp/airflowtmp7882jsud/insert_csv_to_dbh8_3iz3k
+[2018-08-29 00:43:20,038] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,038] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/insert_csv_to_db.sh gapremium_daily_visits_2 /home/baadmin/Documents/dfs/csv_files/gapremium/  20180821  /gapremium_daily_aggregates_full_ .csv "\|"
+[2018-08-29 00:43:20,043] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,042] {bash_operator.py:90} INFO - Output:
+[2018-08-29 00:43:20,047] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,047] {bash_operator.py:94} INFO - gapremium_daily_visits_2 /home/baadmin/Documents/dfs/csv_files/gapremium/20180821/gapremium_daily_aggregates_full_20180821.csv
+[2018-08-29 00:43:20,047] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,047] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 00:43:20,048] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,048] {bash_operator.py:94} INFO - gapremium_daily_visits_2 /home/baadmin/Documents/dfs/csv_files/gapremium/20180821/gapremium_daily_aggregates_full_20180821.csv \|
+[2018-08-29 00:43:20,051] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:20,051] {bash_operator.py:94} INFO - ========executing this insert_csv_db===============
+[2018-08-29 00:43:21,699] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:21,698] {bash_operator.py:94} INFO - COPY  dmd_staging.gapremium_daily_visits_2 FROM STDIN CSV HEADER DELIMITER '\|'
+[2018-08-29 00:43:21,899] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:21,898] {bash_operator.py:94} INFO - ERROR:  COPY delimiter must be a single one-byte character
+[2018-08-29 00:43:21,904] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:21,902] {bash_operator.py:97} INFO - Command exited with return code 1
+[2018-08-29 00:43:21,906] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:21,904] {models.py:1417} ERROR - Bash command failed
+[2018-08-29 00:43:21,907] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 00:43:21,907] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1374, in run
+[2018-08-29 00:43:21,907] {base_task_runner.py:95} INFO - Subtask:     result = task_copy.execute(context=context)
+[2018-08-29 00:43:21,907] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/operators/bash_operator.py", line 100, in execute
+[2018-08-29 00:43:21,907] {base_task_runner.py:95} INFO - Subtask:     raise AirflowException("Bash command failed")
+[2018-08-29 00:43:21,908] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: Bash command failed
+[2018-08-29 00:43:21,910] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 00:43:21,910] {models.py:1433} INFO - Marking task as UP_FOR_RETRY
+[2018-08-29 07:53:09,441] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:09,440] {models.py:1446} ERROR - Failed to send email to: aulpathakumbura@mitrai.com
+[2018-08-29 07:53:09,444] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:09,440] {models.py:1447} ERROR - [Errno 101] Network is unreachable
+[2018-08-29 07:53:09,444] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:09,444] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1374, in run
+[2018-08-29 07:53:09,445] {base_task_runner.py:95} INFO - Subtask:     result = task_copy.execute(context=context)
+[2018-08-29 07:53:09,445] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/operators/bash_operator.py", line 100, in execute
+[2018-08-29 07:53:09,445] {base_task_runner.py:95} INFO - Subtask:     raise AirflowException("Bash command failed")
+[2018-08-29 07:53:09,445] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: Bash command failed
+[2018-08-29 07:53:09,446] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 07:53:09,446] {base_task_runner.py:95} INFO - Subtask: During handling of the above exception, another exception occurred:
+[2018-08-29 07:53:09,446] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 07:53:09,447] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:09,447] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1435, in handle_failure
+[2018-08-29 07:53:09,447] {base_task_runner.py:95} INFO - Subtask:     self.email_alert(error, is_retry=True)
+[2018-08-29 07:53:09,447] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1595, in email_alert
+[2018-08-29 07:53:09,447] {base_task_runner.py:95} INFO - Subtask:     send_email(task.email, title, body)
+[2018-08-29 07:53:09,447] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/email.py", line 44, in send_email
+[2018-08-29 07:53:09,448] {base_task_runner.py:95} INFO - Subtask:     return backend(to, subject, html_content, files=files, dryrun=dryrun, cc=cc, bcc=bcc, mime_subtype=mime_subtype)
+[2018-08-29 07:53:09,448] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/email.py", line 86, in send_email_smtp
+[2018-08-29 07:53:09,448] {base_task_runner.py:95} INFO - Subtask:     send_MIME_email(SMTP_MAIL_FROM, recipients, msg, dryrun)
+[2018-08-29 07:53:09,448] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/email.py", line 104, in send_MIME_email
+[2018-08-29 07:53:09,449] {base_task_runner.py:95} INFO - Subtask:     s = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) if SMTP_SSL else smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+[2018-08-29 07:53:09,449] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+[2018-08-29 07:53:09,455] {base_task_runner.py:95} INFO - Subtask:     (code, msg) = self.connect(host, port)
+[2018-08-29 07:53:09,455] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+[2018-08-29 07:53:09,455] {base_task_runner.py:95} INFO - Subtask:     self.sock = self._get_socket(host, port, self.timeout)
+[2018-08-29 07:53:09,460] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+[2018-08-29 07:53:09,460] {base_task_runner.py:95} INFO - Subtask:     self.source_address)
+[2018-08-29 07:53:09,460] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+[2018-08-29 07:53:09,461] {base_task_runner.py:95} INFO - Subtask:     raise err
+[2018-08-29 07:53:09,461] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+[2018-08-29 07:53:09,464] {base_task_runner.py:95} INFO - Subtask:     sock.connect(sa)
+[2018-08-29 07:53:09,465] {base_task_runner.py:95} INFO - Subtask: OSError: [Errno 101] Network is unreachable
+[2018-08-29 07:53:09,535] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:09,535] {models.py:1462} ERROR - Bash command failed
+[2018-08-29 07:53:09,536] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 07:53:09,536] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 07:53:09,537] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:09,537] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/bin/airflow", line 28, in <module>
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:     args.func(args)
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/bin/cli.py", line 422, in run
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:     pool=args.pool,
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/db.py", line 53, in wrapper
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:     result = func(*args, **kwargs)
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1374, in run
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:     result = task_copy.execute(context=context)
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/operators/bash_operator.py", line 100, in execute
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask:     raise AirflowException("Bash command failed")
+[2018-08-29 07:53:09,538] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: Bash command failed
+[2018-08-29 07:53:10,462] {jobs.py:2083} INFO - Task exited with return code 1
+[2018-08-29 07:53:11,302] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 07:53:11,770] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run Jobsv31.gapremiuim_dailyaggregatesfull insert_csv_to_db 2018-08-21T00:00:00 --job_id 46 --raw -sd /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py']
+[2018-08-29 07:53:12,102] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,101] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2018-08-29 07:53:12,381] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,380] {models.py:167} INFO - Filling up the DagBag from /home/baadmin/Documents/dfs/workspace/airflow/dags/Main_dag.py
+[2018-08-29 07:53:12,793] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,793] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.insert_csv_to_db 2018-08-21 00:00:00 [queued]>
+[2018-08-29 07:53:12,799] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,799] {models.py:1126} INFO - Dependencies all met for <TaskInstance: Jobsv31.gapremiuim_dailyaggregatesfull.insert_csv_to_db 2018-08-21 00:00:00 [queued]>
+[2018-08-29 07:53:12,800] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,799] {models.py:1318} INFO - 
+[2018-08-29 07:53:12,800] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 07:53:12,800] {base_task_runner.py:95} INFO - Subtask: Starting attempt 2 of 4
+[2018-08-29 07:53:12,800] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2018-08-29 07:53:12,800] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 07:53:12,828] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,828] {models.py:1342} INFO - Executing <Task(BashOperator): insert_csv_to_db> on 2018-08-21 00:00:00
+[2018-08-29 07:53:12,838] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,838] {bash_operator.py:71} INFO - tmp dir root location: 
+[2018-08-29 07:53:12,838] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2018-08-29 07:53:12,839] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,839] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpn1z9iha1//tmp/airflowtmpn1z9iha1/insert_csv_to_dbfiejfsg0
+[2018-08-29 07:53:12,839] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,839] {bash_operator.py:81} INFO - Running command: /home/baadmin/Documents/dfs/workspace/airflow/bash/insert_csv_to_db.sh gapremium_daily_visits_2 /home/baadmin/Documents/dfs/csv_files/gapremium/  20180821  /gapremium_daily_aggregates_full_ .csv "\|"
+[2018-08-29 07:53:12,842] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,842] {bash_operator.py:90} INFO - Output:
+[2018-08-29 07:53:12,844] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,844] {bash_operator.py:94} INFO - gapremium_daily_visits_2 /home/baadmin/Documents/dfs/csv_files/gapremium/20180821/gapremium_daily_aggregates_full_20180821.csv
+[2018-08-29 07:53:12,844] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,844] {bash_operator.py:94} INFO - ========executing this file in ETL!!! ===============
+[2018-08-29 07:53:12,844] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,844] {bash_operator.py:94} INFO - gapremium_daily_visits_2 /home/baadmin/Documents/dfs/csv_files/gapremium/20180821/gapremium_daily_aggregates_full_20180821.csv \|
+[2018-08-29 07:53:12,846] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,846] {bash_operator.py:94} INFO - ========executing this insert_csv_db===============
+[2018-08-29 07:53:12,924] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,920] {bash_operator.py:94} INFO - psql: could not translate host name "dev-extractor-db.cnimcclfnoqr.eu-west-1.rds.amazonaws.com" to address: Temporary failure in name resolution
+[2018-08-29 07:53:12,928] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,925] {bash_operator.py:97} INFO - Command exited with return code 2
+[2018-08-29 07:53:12,928] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,926] {models.py:1417} ERROR - Bash command failed
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1374, in run
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask:     result = task_copy.execute(context=context)
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/operators/bash_operator.py", line 100, in execute
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask:     raise AirflowException("Bash command failed")
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: Bash command failed
+[2018-08-29 07:53:12,929] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,928] {models.py:1433} INFO - Marking task as UP_FOR_RETRY
+[2018-08-29 07:53:12,933] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,933] {models.py:1446} ERROR - Failed to send email to: aulpathakumbura@mitrai.com
+[2018-08-29 07:53:12,935] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,933] {models.py:1447} ERROR - [Errno -3] Temporary failure in name resolution
+[2018-08-29 07:53:12,935] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:12,935] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1374, in run
+[2018-08-29 07:53:12,935] {base_task_runner.py:95} INFO - Subtask:     result = task_copy.execute(context=context)
+[2018-08-29 07:53:12,935] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/operators/bash_operator.py", line 100, in execute
+[2018-08-29 07:53:12,935] {base_task_runner.py:95} INFO - Subtask:     raise AirflowException("Bash command failed")
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: Bash command failed
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask: During handling of the above exception, another exception occurred:
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask: 
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1435, in handle_failure
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:     self.email_alert(error, is_retry=True)
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1595, in email_alert
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:     send_email(task.email, title, body)
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/email.py", line 44, in send_email
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:     return backend(to, subject, html_content, files=files, dryrun=dryrun, cc=cc, bcc=bcc, mime_subtype=mime_subtype)
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/email.py", line 86, in send_email_smtp
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:     send_MIME_email(SMTP_MAIL_FROM, recipients, msg, dryrun)
+[2018-08-29 07:53:12,936] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/email.py", line 104, in send_MIME_email
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:     s = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) if SMTP_SSL else smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:     (code, msg) = self.connect(host, port)
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:     self.sock = self._get_socket(host, port, self.timeout)
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:     self.source_address)
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/socket.py", line 704, in create_connection
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+[2018-08-29 07:53:12,937] {base_task_runner.py:95} INFO - Subtask:   File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+[2018-08-29 07:53:12,938] {base_task_runner.py:95} INFO - Subtask:     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2018-08-29 07:53:12,941] {base_task_runner.py:95} INFO - Subtask: socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2018-08-29 07:53:12,972] {base_task_runner.py:95} INFO - Subtask: [2018-08-29 07:53:12,972] {models.py:1462} ERROR - Bash command failed
+[2018-08-29 07:53:12,972] {base_task_runner.py:95} INFO - Subtask: /home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: DeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2018-08-29 07:53:12,972] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/bin/airflow", line 28, in <module>
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:     args.func(args)
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/bin/cli.py", line 422, in run
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:     pool=args.pool,
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/utils/db.py", line 53, in wrapper
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:     result = func(*args, **kwargs)
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/models.py", line 1374, in run
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:     result = task_copy.execute(context=context)
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:   File "/home/baadmin/.virtualenvs/Airflow_new/lib/python3.6/site-packages/airflow/operators/bash_operator.py", line 100, in execute
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask:     raise AirflowException("Bash command failed")
+[2018-08-29 07:53:12,973] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: Bash command failed
+[2018-08-29 07:53:16,769] {jobs.py:2083} INFO - Task exited with return code 1
